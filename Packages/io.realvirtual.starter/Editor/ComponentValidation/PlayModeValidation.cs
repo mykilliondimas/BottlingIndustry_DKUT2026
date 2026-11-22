@@ -24,7 +24,7 @@ namespace realvirtual
             if (state == PlayModeStateChange.ExitingEditMode)
             {
                 // Check if validation is enabled in realvirtualController
-                var controller = Object.FindFirstObjectByType<realvirtualController>();
+                var controller = Object.FindAnyObjectByType<realvirtualController>();
                 
                 if (controller != null && controller.ValidateBeforeStart && validationEnabled)
                 {

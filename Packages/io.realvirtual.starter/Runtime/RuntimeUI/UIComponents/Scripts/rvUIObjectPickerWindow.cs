@@ -14,7 +14,7 @@ namespace realvirtual
         public static void Open(Action<Object> onObjectSelected, Type type)
         {
         
-            rvUIObjectPickerWindow w = FindFirstObjectByType<rvUIObjectPickerWindow>(FindObjectsInactive.Include);
+            rvUIObjectPickerWindow w = FindAnyObjectByType<rvUIObjectPickerWindow>(FindObjectsInactive.Include);
 
             w.ClearElements();
         
@@ -41,7 +41,7 @@ namespace realvirtual
         private void FillWithElements(Action<Object> onObjectSelected, Type type)
         {
         
-            Object[] objects = FindObjectsByType(type, FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+            Object[] objects = FindObjectsByType(type, FindObjectsInactive.Exclude);
         
             GameObject prefab = UnityEngine.Resources.Load<GameObject>("rvUIElement");
 

@@ -64,7 +64,7 @@ namespace realvirtual
             // Find any interface component
             targetInterface = GetComponentInParent<InterfaceBaseClass>();
             if (targetInterface == null)
-                targetInterface = FindFirstObjectByType<InterfaceBaseClass>();
+                targetInterface = FindAnyObjectByType<InterfaceBaseClass>();
                 
             if (targetInterface == null)
             {

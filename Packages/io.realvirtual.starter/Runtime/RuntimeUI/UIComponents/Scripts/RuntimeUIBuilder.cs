@@ -586,7 +586,7 @@ namespace realvirtual
         {
             if (overlayArea == null)
             {
-                rvUIArea[] areas = FindObjectsByType<rvUIArea>(FindObjectsSortMode.None);
+                rvUIArea[] areas = FindObjectsByType<rvUIArea>();
                 foreach (var a in areas)
                 {
                     if (a.area == rvUIArea.Area.Overlay)

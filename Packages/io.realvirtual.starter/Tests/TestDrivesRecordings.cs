@@ -32,7 +32,7 @@ namespace realvirtual
         public void GetAllDrives()
         {
 
-            Drives = FindObjectsByType<Drive>(FindObjectsSortMode.None).ToList();
+            Drives = FindObjectsByType<Drive>().ToList();
         }
         
         [Button("Save Traces as reference")]

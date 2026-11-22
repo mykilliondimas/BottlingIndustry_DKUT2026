@@ -41,7 +41,7 @@ namespace realvirtual.MCP.Tools
             }
 
             // --- Sensors: raycast layer mask must be present and valid -----------------
-            foreach (var sensor in Object.FindObjectsByType<Sensor>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+            foreach (var sensor in Object.FindObjectsByType<Sensor>(FindObjectsInactive.Include))
             {
                 var layers = sensor.AdditionalRayCastLayers;
                 bool hasAnyValid = false;
@@ -76,7 +76,7 @@ namespace realvirtual.MCP.Tools
             }
 
             // --- Sources: GenerateOnLayer must be a real layer name (not an index / legacy) --
-            foreach (var source in Object.FindObjectsByType<Source>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+            foreach (var source in Object.FindObjectsByType<Source>(FindObjectsInactive.Include))
             {
                 var layerName = source.GenerateOnLayer;
                 if (!string.IsNullOrEmpty(layerName) && LayerMask.NameToLayer(layerName) == -1)
@@ -88,7 +88,7 @@ namespace realvirtual.MCP.Tools
             }
 
             // --- MUs: must sit on an rvMU* layer to be seen by sensors and transport ----
-            foreach (var mu in Object.FindObjectsByType<MU>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+            foreach (var mu in Object.FindObjectsByType<MU>(FindObjectsInactive.Include))
             {
                 var layerName = LayerMask.LayerToName(mu.gameObject.layer);
                 if (string.IsNullOrEmpty(layerName) || layerName == "Default" || !layerName.StartsWith("rv"))
@@ -98,7 +98,7 @@ namespace realvirtual.MCP.Tools
             }
 
             // --- Drives: a drive with speed 0 will never move ---------------------------
-            foreach (var drive in Object.FindObjectsByType<Drive>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+            foreach (var drive in Object.FindObjectsByType<Drive>(FindObjectsInactive.Include))
             {
                 if (Mathf.Approximately(drive.TargetSpeed, 0f))
                     Add(drive.gameObject, "Drive", "warning",

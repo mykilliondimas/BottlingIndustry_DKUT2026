@@ -59,9 +59,11 @@ namespace realvirtual
 
             if (path.Length != 0)
             {
+#pragma warning disable CS0618 // Compatibility export API for supported Unity 2022.3 and Unity 6 versions
                 AssetDatabase.ExportPackage("Assets", path,
                     ExportPackageOptions.Interactive | ExportPackageOptions.Recurse |
                     ExportPackageOptions.IncludeLibraryAssets | ExportPackageOptions.IncludeDependencies);
+#pragma warning restore CS0618
             }
         }
 
@@ -78,9 +80,11 @@ namespace realvirtual
 
             if (path.Length != 0)
             {
+#pragma warning disable CS0618 // Compatibility export API for supported Unity 2022.3 and Unity 6 versions
                 AssetDatabase.ExportPackage(assetpath, path,
                     ExportPackageOptions.Interactive | ExportPackageOptions.Recurse |
                     ExportPackageOptions.IncludeDependencies);
+#pragma warning restore CS0618
             }
         }
 
@@ -104,8 +108,10 @@ namespace realvirtual
 
             if (path.Length != 0)
             {
+#pragma warning disable CS0618 // Compatibility export API for supported Unity 2022.3 and Unity 6 versions
                 AssetDatabase.ExportPackage(assetpath, path,
                     ExportPackageOptions.Interactive | ExportPackageOptions.Recurse);
+#pragma warning restore CS0618
             }
         }
         

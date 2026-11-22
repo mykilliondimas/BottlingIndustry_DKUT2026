@@ -85,29 +85,13 @@ namespace realvirtual.RendererFeatures
             }
         }
 
-        private static void ExecuteBlit(BlitPassData data, RasterGraphContext context, int pass)
-        {
-            Blitter.BlitTexture(context.cmd, data.Source, new Vector4(1f, 1f, 0f, 0f), data.Material, pass);
-        }
-
-        private static void ExecuteDoubleBlit(BlitPassData data, RasterGraphContext context, int pass)
-        {
-            Blitter.BlitTexture(context.cmd, data.Source, new Vector4(1f, 1f, 0f, 0f), data.Material, pass);
-            Blitter.BlitTexture(context.cmd, data.Source, new Vector4(1f, 1f, 0f, 0f), data.Material, pass + 1);
-        }
-
         private class RenderObjectsPassData
         {
             internal Renderer[] Renderers;
             internal Material Material;
         }
 
-        private class BlitPassData
-        {
-            internal TextureHandle Source;
-            internal Material Material;
-        }
-#else
+        #else
         // URP 14 / Unity 2022.3 compatibility (e.g. Tuanjie Editor).
         // The overlay effect relies on the RenderGraph API (URP 17 / Unity 6)
         // and is not rendered on the legacy render pipeline.

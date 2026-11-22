@@ -27,13 +27,13 @@ namespace realvirtual
 
         public static void Open()
         {
-            var settingsWindow = FindFirstObjectByType<SettingsWindowCtrl>(FindObjectsInactive.Include);
+            var settingsWindow = FindAnyObjectByType<SettingsWindowCtrl>(FindObjectsInactive.Include);
             settingsWindow.gameObject.SetActive(true);
         }
 
         public static void Close()
         {
-            var settingsWindow = FindFirstObjectByType<SettingsWindowCtrl>(FindObjectsInactive.Include);
+            var settingsWindow = FindAnyObjectByType<SettingsWindowCtrl>(FindObjectsInactive.Include);
             settingsWindow.gameObject.SetActive(false);
         }
 
@@ -68,7 +68,7 @@ namespace realvirtual
         private void OnWindowsClose()
         {
             // Save Runtime Persistances
-            List<RuntimePersistence> runtimePersistences = Object.FindObjectsByType<RuntimePersistence>(FindObjectsInactive.Include,FindObjectsSortMode.None).ToList();
+            List<RuntimePersistence> runtimePersistences = Object.FindObjectsByType<RuntimePersistence>(FindObjectsInactive.Include).ToList();
             if (runtimePersistences.Count > 0)
             {
                 foreach (var objvar in runtimePersistences)
@@ -104,7 +104,7 @@ namespace realvirtual
                 }
                 inputFieldOptions.Clear();
             }
-            List<RuntimePersistence> runtimePersistences = Object.FindObjectsByType<RuntimePersistence>(FindObjectsInactive.Include,FindObjectsSortMode.None).ToList();
+            List<RuntimePersistence> runtimePersistences = Object.FindObjectsByType<RuntimePersistence>(FindObjectsInactive.Include).ToList();
             if (runtimePersistences.Count > 0)
             {
                 foreach (var objvar in runtimePersistences)

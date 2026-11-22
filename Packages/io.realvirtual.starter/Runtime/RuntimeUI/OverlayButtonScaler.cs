@@ -81,7 +81,7 @@ namespace realvirtual
         void Start()
         {
             // check if in the scene is an interfacebaseclass children
-            var interfaces = FindObjectsByType<InterfaceBaseClass>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            var interfaces = FindObjectsByType<InterfaceBaseClass>(FindObjectsInactive.Include);
             if (interfaces.Length == 0)
             {
                 foreach (var obj in DeactivateWhenNoInterface)

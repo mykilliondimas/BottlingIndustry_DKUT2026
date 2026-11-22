@@ -101,7 +101,7 @@ namespace realvirtual
 
         private static void CheckNonStaticMeshes()
         {
-            var finalmeshes = FindObjectsByType<GameObject>(FindObjectsSortMode.None)
+            var finalmeshes = FindObjectsByType<GameObject>()
                 .Where(go => go.GetComponent<MeshRenderer>() != null && !go.isStatic)
                 .Where(go => go.GetComponentInParent<Drive>() == null)
                 .Where(go => go.GetComponentInParent<realvirtualController>() == null)
@@ -134,7 +134,7 @@ namespace realvirtual
 
         private static void CheckStaticMeshes()
         {
-            var staticMeshesWithDrive = FindObjectsByType<GameObject>(FindObjectsSortMode.None)
+            var staticMeshesWithDrive = FindObjectsByType<GameObject>()
                 .Where(go => go.GetComponent<MeshRenderer>() != null && go.isStatic)
                 .Where(go => go.GetComponentInParent<Drive>() != null)
                 .Where(go => go.GetComponentInParent<Drive>().GetTransportSurfaces().Count == 0)
@@ -152,7 +152,7 @@ namespace realvirtual
         private static void HugeMeshes()
         {
             // collect mesh filters excluding realvirtualController children, cache vertex counts
-            var meshData = FindObjectsByType<MeshFilter>(FindObjectsSortMode.None)
+            var meshData = FindObjectsByType<MeshFilter>()
                 .Where(mf => mf.sharedMesh != null && mf.GetComponentInParent<realvirtualController>() == null)
                 .Select(mf => new { go = mf.gameObject, vertices = mf.sharedMesh.vertexCount })
                 .ToList();
@@ -179,7 +179,7 @@ namespace realvirtual
 
         private static void NumberOfMeshes()
         {
-            var totalMeshes = FindObjectsByType<MeshRenderer>(FindObjectsSortMode.None)
+            var totalMeshes = FindObjectsByType<MeshRenderer>()
                 .Count(mr => mr.enabled);
 
             if (totalMeshes > 1000)
@@ -193,7 +193,7 @@ namespace realvirtual
 
         private static void NonSharedMaterials()
         {
-            var materialCount = FindObjectsByType<MeshRenderer>(FindObjectsSortMode.None)
+            var materialCount = FindObjectsByType<MeshRenderer>()
                 .Select(mr => mr.sharedMaterial)
                 .Distinct()
                 .Count();
@@ -210,7 +210,7 @@ namespace realvirtual
 
         private static void MUsWithoutRigidbody()
         {
-            var musWithoutRigidbody = FindObjectsByType<MU>(FindObjectsSortMode.None)
+            var musWithoutRigidbody = FindObjectsByType<MU>()
                 .Where(mu => mu.GetComponent<Rigidbody>() == null
                           && mu.GetComponent("DESMU") == null)  // DES MUs use event-driven positioning, no Rigidbody needed
                 .Select(mu => mu.gameObject)
@@ -229,12 +229,12 @@ namespace realvirtual
         private static void GuidedTransport()
         {
             // Check if there are any guided transports in the scene
-            var guidedTransport = FindObjectsByType<TransportGuided>(FindObjectsSortMode.None);
+            var guidedTransport = FindObjectsByType<TransportGuided>();
 
             if (guidedTransport.Length == 0)
                 return;
             
-            var mus = FindObjectsByType<MU>(FindObjectsSortMode.None);
+            var mus = FindObjectsByType<MU>();
             
             var musObjects = mus.Select(mu => mu.gameObject).ToList();
             
@@ -255,7 +255,7 @@ namespace realvirtual
             var rvMULayer = LayerMask.NameToLayer("rvMU");
             var rvMUSensorLayer = LayerMask.NameToLayer("rvMUSensor");
 
-            var badSensors = FindObjectsByType<Sensor>(FindObjectsSortMode.None)
+            var badSensors = FindObjectsByType<Sensor>()
                 .Where(sensor => sensor.UseRaycast)
                 .Where(sensor => !sensor.AdditionalRayCastLayers.Contains("rvMU") &&
                                  !sensor.AdditionalRayCastLayers.Contains("rvMUSensor"))
@@ -277,7 +277,7 @@ namespace realvirtual
         private static void CheckSinkLayer()
         {
             var rvSensorLayer = LayerMask.NameToLayer("rvSensor");
-            var sinksWithoutLayer = FindObjectsByType<Sink>(FindObjectsSortMode.None)
+            var sinksWithoutLayer = FindObjectsByType<Sink>()
                 .Where(sink => sink.gameObject.layer != rvSensorLayer)
                 .Select(sink => sink.gameObject)
                 .ToList();
@@ -295,7 +295,7 @@ namespace realvirtual
         private static void SensorColliderLayer()
         {
             var rvSensorLayer = LayerMask.NameToLayer("rvSensor");
-            var colliderSensorsWithoutLayer = FindObjectsByType<Sensor>(FindObjectsSortMode.None)
+            var colliderSensorsWithoutLayer = FindObjectsByType<Sensor>()
                 .Where(sensor => !sensor.UseRaycast)
                 .Where(sensor => sensor.gameObject.layer != rvSensorLayer)
                 .Select(sensor => sensor.gameObject)
@@ -313,7 +313,7 @@ namespace realvirtual
 
         private static void ComplexColliders()
         {
-            var meshColliders = FindObjectsByType<MeshCollider>(FindObjectsSortMode.None);
+            var meshColliders = FindObjectsByType<MeshCollider>();
             var count = meshColliders.Length;
 
             if (count > 20)
@@ -328,7 +328,7 @@ namespace realvirtual
 
         private static void ManyColliders()
         {
-            var allColliders = FindObjectsByType<Collider>(FindObjectsSortMode.None);
+            var allColliders = FindObjectsByType<Collider>();
             var count = allColliders.Length;
 
             if (count > 300)
@@ -349,7 +349,7 @@ namespace realvirtual
             var rvSelection = LayerMask.NameToLayer("rvSelection");
             var rvSensor = LayerMask.NameToLayer("rvSensor");
 
-            var badColliders = FindObjectsByType<Collider>(FindObjectsSortMode.None)
+            var badColliders = FindObjectsByType<Collider>()
                 .Where(c => c.gameObject.layer != rvMU &&
                             c.gameObject.layer != rvMUSensor &&
                             c.gameObject.layer != rvTransport &&
@@ -370,7 +370,7 @@ namespace realvirtual
 
         private static void NumberOfLights()
         {
-            var lights = FindObjectsByType<Light>(FindObjectsSortMode.None);
+            var lights = FindObjectsByType<Light>();
             var count = lights.Length;
 
             if (count > 2)

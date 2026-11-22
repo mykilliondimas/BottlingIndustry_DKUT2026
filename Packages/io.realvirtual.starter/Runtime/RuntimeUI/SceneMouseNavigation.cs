@@ -1,4 +1,4 @@
-﻿// realvirtual (R) Framework for Automation Concept Design, Virtual Commissioning and 3D-HMI
+// realvirtual (R) Framework for Automation Concept Design, Virtual Commissioning and 3D-HMI
 // (c) 2019 in2Sight GmbH - Usage of this source code only allowed based on License conditions see https://realvirtual.io/unternehmen/lizenz    
 
 
@@ -202,7 +202,7 @@ namespace realvirtual
         private bool startcameraposset;
         private float startpanhitdistance;
         private Vector3 targetposition;
-        private bool touch;
+        private bool touch = false;
 
         private bool touchnotnull;
 
@@ -269,7 +269,7 @@ namespace realvirtual
         {
             if (cachedUIDocuments == null || Time.realtimeSinceStartup - lastUIDocumentCacheTime > UI_DOCUMENT_CACHE_INTERVAL)
             {
-                cachedUIDocuments = FindObjectsByType<UIDocument>(FindObjectsSortMode.None);
+                cachedUIDocuments = FindObjectsByType<UIDocument>();
                 lastUIDocumentCacheTime = Time.realtimeSinceStartup;
             }
             return cachedUIDocuments;
@@ -824,7 +824,7 @@ namespace realvirtual
             // Block when in follow mode
             if (!isFollowingObject && (focuspressed || Input.GetKey(realvirtualController.HotKeyResetView)))
             {
-                var dist = CalculateFocusViewDistance(FindObjectsByType<Renderer>(FindObjectsSortMode.None));
+                var dist = CalculateFocusViewDistance(FindObjectsByType<Renderer>());
                 targetposition = calculatedboundscenter;
                 desiredDistance = distance;
             }
@@ -2233,7 +2233,7 @@ namespace realvirtual
                 ActivateCinemachine(true);
 
             // Set low priority to all other vcams
-            var vcams = FindObjectsByType(typeof(CinemachineVirtualCamera),FindObjectsSortMode.None);
+            var vcams = FindObjectsByType(typeof(CinemachineVirtualCamera));
             foreach (CinemachineVirtualCamera vc in vcams)
                 if (vc != vcam)
                     vc.Priority = 10;
@@ -2249,7 +2249,7 @@ namespace realvirtual
 #if REALVIRTUAL_PROFESSIONAL
             hmiController = FindAnyObjectByType<HMI_Controller>();
 #endif
-            var rnds = FindObjectsByType<Renderer>(FindObjectsSortMode.None);
+            var rnds = FindObjectsByType<Renderer>();
 
             //If there is no target, create a temporary target at 'distance' from the cameras current viewpoint
             if (!target)

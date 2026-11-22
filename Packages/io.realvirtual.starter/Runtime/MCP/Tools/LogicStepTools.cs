@@ -63,11 +63,11 @@ namespace realvirtual.MCP.Tools
             var allContainers = new List<LogicStep>();
 
             // Find all SerialContainers
-            foreach (var sc in Object.FindObjectsByType<LogicStep_SerialContainer>(FindObjectsSortMode.None))
+            foreach (var sc in Object.FindObjectsByType<LogicStep_SerialContainer>())
                 allContainers.Add(sc);
 
             // Find all ParallelContainers
-            foreach (var pc in Object.FindObjectsByType<LogicStep_ParallelContainer>(FindObjectsSortMode.None))
+            foreach (var pc in Object.FindObjectsByType<LogicStep_ParallelContainer>())
                 allContainers.Add(pc);
 
             // Filter to top-level only: parent has no LogicStep component

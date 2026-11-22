@@ -1,4 +1,4 @@
-﻿// realvirtual.io (formerly game4automation) (R) a Framework for Automation Concept Design, Virtual Commissioning and 3D-HMI
+// realvirtual.io (formerly game4automation) (R) a Framework for Automation Concept Design, Virtual Commissioning and 3D-HMI
 // Copyright(c) 2019 realvirtual GmbH - Usage of this source code only allowed based on License conditions see https://realvirtual.io/unternehmen/lizenz    
 
 
@@ -951,7 +951,7 @@ namespace realvirtual
             System.Reflection.MethodInfo methodInfo = type.GetMethod("SetExpandedRecursive");
             EditorApplication.ExecuteMenuItem("Window/General/Hierarchy");
             EditorWindow editorWindow = EditorWindow.focusedWindow;
-            methodInfo.Invoke(editorWindow, new object[] {go.GetEntityId(), expand});
+            methodInfo.Invoke(editorWindow, new object[] {go.GetInstanceID(), expand});
         }
 
 #endif
@@ -1204,7 +1204,7 @@ namespace realvirtual
             }
             
             // get all realvirtualbeahviors in the scene
-            var behaviors = Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Include,FindObjectsSortMode.None).OfType<ISceneLoaded>();
+            var behaviors = Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Include).OfType<ISceneLoaded>();
             foreach (var behavior in behaviors)
             {
                 behavior.OnSceneLoaded();
@@ -1231,7 +1231,7 @@ namespace realvirtual
                     realvirtualcontroller.OnEditModeFinished();
                     // get all realvirtualbeahviors in the scene
                     var behaviors = Object
-                        .FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+                        .FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Include)
                         .OfType<IEditModeFinished>();
                     foreach (var behavior in behaviors)
                     {

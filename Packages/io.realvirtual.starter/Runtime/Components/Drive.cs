@@ -253,7 +253,7 @@ namespace realvirtual
         private bool articulatedbodynotnull;
         private ArticulationBody articulatedbody;
 
-        private bool useagx;
+        private bool useagx = false;
 
         private float _targettime;
         private const float SMOOTH_JOG_TARGET_DISTANCE = 1000000f;

@@ -58,6 +58,5 @@ AssetOrigin:
   productId: 366612
   packageName: realvirtual Digital Twin Starter 6.3
   packageVersion: 6.3.6-10297
-  assetPath: Packages/io.realvirtual.starter/Assets/Materials/Textures/metal common
-    scratches occlusion.png
+  assetPath: Packages/io.realvirtual.starter/Assets/Materials/Textures/metal common scratches occlusion.png
   uploadId: 1012782

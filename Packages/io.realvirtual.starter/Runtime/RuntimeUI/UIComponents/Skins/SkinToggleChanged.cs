@@ -23,7 +23,7 @@ namespace realvirtual
         // Start is called before the first frame update
         protected new void Awake()
         {
-            controller = FindFirstObjectByType<realvirtualController>();
+            controller = FindAnyObjectByType<realvirtualController>();
             toggle = GetComponent<Toggle>();
             //toggle.onValueChanged.AddListener(OnSkinToggleChanged);
             textObj= GetComponentInChildren<Text>();

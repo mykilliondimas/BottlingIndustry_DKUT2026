@@ -21,6 +21,14 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 3085162058089759014
+      type: {class: 'Stack`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic,
+        asm: mscorlib}
+      data: 
+    - rid: 3085162058089759015
+      type: {class: 'HashSet`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic,
+        asm: System.Core}
+      data: 
     - rid: 4295969331626377362
       type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -32,8 +40,19 @@ MonoBehaviour:
           rid: 4295969331626377364
         BlackboardGroupReferences: []
         Root:
-          rid: 5239374308267524301
-        m_VersionTimestamp: 639270701668319575
+<<<<<<< Updated upstream
+          rid: 7875812153193136223
+        m_VersionTimestamp: 639307986325679260
+=======
+          rid: 7032417231970238772
+        m_ActiveNodes: []
+        m_NodesToTick: []
+        m_NodesToEnd:
+          rid: 3085162058089759014
+        m_EndedNodes:
+          rid: 3085162058089759015
+        m_VersionTimestamp: 639114337042446612
+>>>>>>> Stashed changes
     - rid: 4295969331626377364
       type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -52,7 +71,8 @@ MonoBehaviour:
         - rid: 4295969331626377375
         - rid: 4295969331626377376
     - rid: 4295969331626377370
-      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 1
@@ -60,7 +80,8 @@ MonoBehaviour:
         Name: Self
         m_Value: {fileID: 0}
     - rid: 4295969331626377371
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 17200292854554606948
@@ -68,7 +89,8 @@ MonoBehaviour:
         Name: ConveyorDrive
         m_Value: {fileID: 0}
     - rid: 4295969331626377372
-      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 16190775289793009510
@@ -76,7 +98,8 @@ MonoBehaviour:
         Name: ConveyorSensor
         m_Value: {fileID: 0}
     - rid: 4295969331626377373
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 11787259523568562822
@@ -84,7 +107,8 @@ MonoBehaviour:
         Name: Axis1
         m_Value: {fileID: 0}
     - rid: 4295969331626377374
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 11371141141850267685
@@ -92,7 +116,8 @@ MonoBehaviour:
         Name: Axis3
         m_Value: {fileID: 0}
     - rid: 4295969331626377375
-      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 13324173454775863306
@@ -100,14 +125,19 @@ MonoBehaviour:
         Name: SignalGrip
         m_Value: {fileID: 0}
     - rid: 4295969331626377376
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 9434105263882083999
           m_Value1: 13598744201078470341
         Name: Axis2
         m_Value: {fileID: 0}
-    - rid: 5239374308267524301
+<<<<<<< Updated upstream
+    - rid: 7875812153193136223
+=======
+    - rid: 7032417231970238772
+>>>>>>> Stashed changes
       type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -118,10 +148,17 @@ MonoBehaviour:
         m_Parent:
           rid: -2
         m_Child:
-          rid: 5239374308267524302
+<<<<<<< Updated upstream
+          rid: 7875812153193136224
         Repeat: 1
         AllowMultipleRepeatsPerTick: 0
-    - rid: 5239374308267524302
+    - rid: 7875812153193136224
+=======
+          rid: 7032417231970238773
+        Repeat: 1
+        AllowMultipleRepeatsPerTick: 0
+    - rid: 7032417231970238773
+>>>>>>> Stashed changes
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -130,11 +167,18 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-          rid: 5239374308267524301
+<<<<<<< Updated upstream
+          rid: 7875812153193136223
         m_Children:
-        - rid: 5239374308267524303
+        - rid: 7875812153193136225
         m_RegisteredObservers: []
-    - rid: 5239374308267524303
+    - rid: 7875812153193136225
+=======
+          rid: 7032417231970238772
+        m_Children:
+        - rid: 7032417231970238774
+    - rid: 7032417231970238774
+>>>>>>> Stashed changes
       type: {class: ParallelAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -143,11 +187,18 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-          rid: 5239374308267524302
+<<<<<<< Updated upstream
+          rid: 7875812153193136224
         m_Children:
-        - rid: 5239374308267524304
+        - rid: 7875812153193136226
         m_RegisteredObservers: []
-    - rid: 5239374308267524304
+    - rid: 7875812153193136226
+=======
+          rid: 7032417231970238773
+        m_Children:
+        - rid: 7032417231970238775
+    - rid: 7032417231970238775
+>>>>>>> Stashed changes
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -156,11 +207,18 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-          rid: 5239374308267524303
+<<<<<<< Updated upstream
+          rid: 7875812153193136225
         m_Children:
-        - rid: 5239374308267524305
+        - rid: 7875812153193136227
         m_RegisteredObservers: []
-    - rid: 5239374308267524305
+    - rid: 7875812153193136227
+=======
+          rid: 7032417231970238774
+        m_Children:
+        - rid: 7032417231970238776
+    - rid: 7032417231970238776
+>>>>>>> Stashed changes
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -169,11 +227,18 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-          rid: 5239374308267524304
+<<<<<<< Updated upstream
+          rid: 7875812153193136226
         m_Children:
-        - rid: 5239374308267524306
+        - rid: 7875812153193136228
         m_RegisteredObservers: []
-    - rid: 5239374308267524306
+    - rid: 7875812153193136228
+=======
+          rid: 7032417231970238775
+        m_Children:
+        - rid: 7032417231970238777
+    - rid: 7032417231970238777
+>>>>>>> Stashed changes
       type: {class: ParallelAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -182,12 +247,20 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-          rid: 5239374308267524305
+<<<<<<< Updated upstream
+          rid: 7875812153193136227
         m_Children:
-        - rid: 5239374308267524307
-        - rid: 5239374308267524308
+        - rid: 7875812153193136229
+        - rid: 7875812153193136230
         m_RegisteredObservers: []
-    - rid: 5239374308267524307
+    - rid: 7875812153193136229
+=======
+          rid: 7032417231970238776
+        m_Children:
+        - rid: 7032417231970238778
+        - rid: 7032417231970238779
+    - rid: 7032417231970238778
+>>>>>>> Stashed changes
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -196,11 +269,18 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-          rid: 5239374308267524306
+<<<<<<< Updated upstream
+          rid: 7875812153193136228
         m_Children:
-        - rid: 5239374308267524309
+        - rid: 7875812153193136231
         m_RegisteredObservers: []
-    - rid: 5239374308267524308
+    - rid: 7875812153193136230
+=======
+          rid: 7032417231970238777
+        m_Children:
+        - rid: 7032417231970238780
+    - rid: 7032417231970238779
+>>>>>>> Stashed changes
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -209,11 +289,18 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-          rid: 5239374308267524306
+<<<<<<< Updated upstream
+          rid: 7875812153193136228
         m_Children:
-        - rid: 5239374308267524309
+        - rid: 7875812153193136231
         m_RegisteredObservers: []
-    - rid: 5239374308267524309
+    - rid: 7875812153193136231
+=======
+          rid: 7032417231970238777
+        m_Children:
+        - rid: 7032417231970238780
+    - rid: 7032417231970238780
+>>>>>>> Stashed changes
       type: {class: WaitForAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -222,11 +309,19 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parents:
-        - rid: 5239374308267524307
-        - rid: 5239374308267524308
+<<<<<<< Updated upstream
+        - rid: 7875812153193136229
+        - rid: 7875812153193136230
         m_Child:
-          rid: 5239374308267524310
-    - rid: 5239374308267524310
+          rid: 7875812153193136232
+    - rid: 7875812153193136232
+=======
+        - rid: 7032417231970238778
+        - rid: 7032417231970238779
+        m_Child:
+          rid: 7032417231970238781
+    - rid: 7032417231970238781
+>>>>>>> Stashed changes
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -235,11 +330,18 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-          rid: 5239374308267524309
+<<<<<<< Updated upstream
+          rid: 7875812153193136231
         m_Children:
-        - rid: 5239374308267524311
+        - rid: 7875812153193136233
         m_RegisteredObservers: []
-    - rid: 5239374308267524311
+    - rid: 7875812153193136233
+=======
+          rid: 7032417231970238780
+        m_Children:
+        - rid: 7032417231970238782
+    - rid: 7032417231970238782
+>>>>>>> Stashed changes
       type: {class: WaitForAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -248,7 +350,11 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parents:
-        - rid: 5239374308267524310
+<<<<<<< Updated upstream
+        - rid: 7875812153193136232
+=======
+        - rid: 7032417231970238781
+>>>>>>> Stashed changes
         m_Child:
           rid: -2
 --- !u!114 &11400000
@@ -288,8 +394,13 @@ MonoBehaviour:
   - rid: 5225085582788788348
   - rid: 5225085582788788355
   - rid: 5225085582788788362
-  m_VersionTimestamp: 639270701668319575
+<<<<<<< Updated upstream
+  m_VersionTimestamp: 639307986325679260
   m_SerializedVersion: 3
+=======
+  m_VersionTimestamp: 639114337042446612
+  m_SerializedVersion: 1
+>>>>>>> Stashed changes
   m_DebugInfo: {fileID: 5792532783686395571}
   m_RuntimeGraph: {fileID: -5417914638257869020}
   AssetID:
@@ -302,8 +413,7 @@ MonoBehaviour:
   m_NodeModelsInfo:
   - Name: On Start
     Story: 
-    RuntimeTypeString: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+    RuntimeTypeString: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
       m_Value0: 3335272451348827663
       m_Value1: 11549843281177505721
@@ -312,103 +422,88 @@ MonoBehaviour:
     IsPlaceholder: 0
   - Name: DriveJog
     Story: 'Start [Drive] Jog Forward [Forward]'
-    RuntimeTypeString: realvirtual.DriveJogAction, realvirtual.base, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeString: realvirtual.DriveJogAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
       m_Value0: 2533536958300992369
       m_Value1: 16423828006002048673
     Variables:
     - Name: Drive
       Type:
-        m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+        m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       Tooltip: 
     - Name: Forward
       Type:
-        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
+        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       Tooltip: 
     NamedChildren: []
     IsPlaceholder: 1
   - Name: StopDrive
     Story: 'Stop [Drive]'
-    RuntimeTypeString: realvirtual.StopDriveAction, realvirtual.base, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeString: realvirtual.StopDriveAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
       m_Value0: 17169234998708807346
       m_Value1: 3046837802158209420
     Variables:
     - Name: Drive
       Type:
-        m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+        m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       Tooltip: 
     NamedChildren: []
     IsPlaceholder: 1
   - Name: WaitForSensor
     Story: 'Wait for [Sensor] occupied [IsOccupied]'
-    RuntimeTypeString: realvirtual.WaitForSensorAction, realvirtual.base, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeString: realvirtual.WaitForSensorAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
       m_Value0: 6254299382558321014
       m_Value1: 1840594747020887533
     Variables:
     - Name: Sensor
       Type:
-        m_SerializableType: realvirtual.Sensor, realvirtual.base, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+        m_SerializableType: realvirtual.Sensor, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       Tooltip: 
     - Name: IsOccupied
       Type:
-        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
+        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       Tooltip: 
     NamedChildren: []
     IsPlaceholder: 1
   - Name: DriveTo
     Story: '[Drive] to position [Position]'
-    RuntimeTypeString: realvirtual.DriveToAction, realvirtual.base, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeString: realvirtual.DriveToAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
       m_Value0: 10475165389101816373
       m_Value1: 742504781950690682
     Variables:
     - Name: Drive
       Type:
-        m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+        m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       Tooltip: 
     - Name: Position
       Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       Tooltip: 
     NamedChildren: []
     IsPlaceholder: 1
   - Name: SetSignalBool
     Story: 'Set [Signal] to [To]'
-    RuntimeTypeString: realvirtual.SetSignalBoolAction, realvirtual.base, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeString: realvirtual.SetSignalBoolAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
       m_Value0: 3888114979382698863
       m_Value1: 14095855940551002499
     Variables:
     - Name: Signal
       Type:
-        m_SerializableType: realvirtual.Signal, realvirtual.base, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+        m_SerializableType: realvirtual.Signal, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       Tooltip: 
     - Name: To
       Type:
-        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
+        m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       Tooltip: 
     NamedChildren: []
     IsPlaceholder: 1
   - Name: Run In Parallel
     Story: 
-    RuntimeTypeString: Unity.Behavior.ParallelAllComposite, Unity.Behavior, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeString: Unity.Behavior.ParallelAllComposite, Unity.Behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
       m_Value0: 6216542881172158703
       m_Value1: 2191282456596108218
@@ -417,8 +512,7 @@ MonoBehaviour:
     IsPlaceholder: 0
   - Name: Wait For All
     Story: 
-    RuntimeTypeString: Unity.Behavior.WaitForAllComposite, Unity.Behavior, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeString: Unity.Behavior.WaitForAllComposite, Unity.Behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
       m_Value0: 7660367652061089412
       m_Value1: 18313906318609194151
@@ -427,41 +521,35 @@ MonoBehaviour:
     IsPlaceholder: 0
   - Name: StartDriveTo
     Story: 'Start [Drive] to [destination]'
-    RuntimeTypeString: realvirtual.StartDriveToAction, realvirtual.base, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    RuntimeTypeString: realvirtual.StartDriveToAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
       m_Value0: 5207008336281378184
       m_Value1: 10181210640123889722
     Variables:
     - Name: Drive
       Type:
-        m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+        m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       Tooltip: 
     - Name: Destination
       Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       Tooltip: 
     NamedChildren: []
     IsPlaceholder: 1
   - Name: WaitForDrivePosition
     Story: 'Wait for [Drive] at [Position]'
-    RuntimeTypeString: realvirtual.WaitForDrivePositionAction, realvirtual.base,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    RuntimeTypeString: realvirtual.WaitForDrivePositionAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     RuntimeTypeID:
       m_Value0: 15450438886760304400
       m_Value1: 912247687982007957
     Variables:
     - Name: Drive
       Type:
-        m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+        m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       Tooltip: 
     - Name: Position
       Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       Tooltip: 
     NamedChildren: []
     IsPlaceholder: 1
@@ -473,15 +561,14 @@ MonoBehaviour:
   m_BlackboardMissingManagedRef: 0
   m_GraphMissingManagedRef: 0
   m_HasMissingTypeInManagedRef: 0
-  m_EnumDependencyCache:
-    Entries: []
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
     - rid: 4295969331626377322
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 17200292854554606948
@@ -491,7 +578,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4295969331626377323
-      type: {class: 'TypedVariableModel`1[[realvirtual.Sensor, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Sensor, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 16190775289793009510
@@ -501,7 +589,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4295969331626377324
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 11371141141850267685
@@ -511,7 +600,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4295969331626377325
-      type: {class: 'TypedVariableModel`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Signal, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 13324173454775863306
@@ -521,7 +611,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4295969331626377326
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 11787259523568562822
@@ -531,7 +622,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4295969331626377327
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 9434105263882083999
@@ -551,8 +643,7 @@ MonoBehaviour:
         PortModels:
         - rid: 5225085563249623357
         NodeType:
-          m_SerializableType: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 3335272451348827663
           m_Value1: 11549843281177505721
@@ -582,8 +673,7 @@ MonoBehaviour:
         - rid: 5225085563249623427
         - rid: 5225085563249623428
         NodeType:
-          m_SerializableType: realvirtual.DriveJogAction, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.DriveJogAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 2533536958300992369
           m_Value1: 16423828006002048673
@@ -613,8 +703,7 @@ MonoBehaviour:
       data:
         FieldName: Drive
         Type:
-          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         LocalValue:
           rid: 5225085563249623431
         LinkedVariable:
@@ -624,14 +713,14 @@ MonoBehaviour:
       data:
         FieldName: Forward
         Type:
-          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085563249623432
         LinkedVariable:
           rid: -2
     - rid: 5225085563249623431
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -639,7 +728,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085563249623432
-      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -658,8 +748,7 @@ MonoBehaviour:
         - rid: 5225085563249623539
         - rid: 5225085563249623540
         NodeType:
-          m_SerializableType: realvirtual.StopDriveAction, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.StopDriveAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 17169234998708807346
           m_Value1: 3046837802158209420
@@ -689,14 +778,14 @@ MonoBehaviour:
       data:
         FieldName: Drive
         Type:
-          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         LocalValue:
           rid: 5225085563249623544
         LinkedVariable:
           rid: 4295969331626377322
     - rid: 5225085563249623544
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -716,8 +805,7 @@ MonoBehaviour:
         - rid: 5225085563249623650
         - rid: 5225085563249623651
         NodeType:
-          m_SerializableType: realvirtual.WaitForSensorAction, realvirtual.base,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.WaitForSensorAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 6254299382558321014
           m_Value1: 1840594747020887533
@@ -753,7 +841,8 @@ MonoBehaviour:
         LinkedVariable:
           rid: 4295969331626377323
     - rid: 5225085563249623653
-      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -765,14 +854,14 @@ MonoBehaviour:
       data:
         FieldName: IsOccupied
         Type:
-          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085563249623655
         LinkedVariable:
           rid: -2
     - rid: 5225085563249623655
-      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -792,8 +881,7 @@ MonoBehaviour:
         - rid: 5225085563249623871
         - rid: 5225085563249623872
         NodeType:
-          m_SerializableType: realvirtual.DriveToAction, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.DriveToAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 10475165389101816373
           m_Value1: 742504781950690682
@@ -823,8 +911,7 @@ MonoBehaviour:
       data:
         FieldName: Drive
         Type:
-          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         LocalValue:
           rid: 5225085563249623877
         LinkedVariable:
@@ -834,14 +921,14 @@ MonoBehaviour:
       data:
         FieldName: Position
         Type:
-          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085563249623878
         LinkedVariable:
           rid: -2
     - rid: 5225085563249623877
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -849,7 +936,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085563249623878
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -869,8 +957,7 @@ MonoBehaviour:
         - rid: 5225085564576071811
         - rid: 5225085564576071812
         NodeType:
-          m_SerializableType: realvirtual.DriveToAction, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.DriveToAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 10475165389101816373
           m_Value1: 742504781950690682
@@ -906,7 +993,8 @@ MonoBehaviour:
         LinkedVariable:
           rid: 4295969331626377324
     - rid: 5225085564576071814
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -918,14 +1006,14 @@ MonoBehaviour:
       data:
         FieldName: Position
         Type:
-          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085564576071816
         LinkedVariable:
           rid: -2
     - rid: 5225085564576071816
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -945,8 +1033,7 @@ MonoBehaviour:
         - rid: 5225085564576072445
         - rid: 5225085564576072446
         NodeType:
-          m_SerializableType: realvirtual.SetSignalBoolAction, realvirtual.base,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.SetSignalBoolAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 3888114979382698863
           m_Value1: 14095855940551002499
@@ -976,8 +1063,7 @@ MonoBehaviour:
       data:
         FieldName: Signal
         Type:
-          m_SerializableType: realvirtual.Signal, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.Signal, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         LocalValue:
           rid: 5225085564576072449
         LinkedVariable:
@@ -987,14 +1073,14 @@ MonoBehaviour:
       data:
         FieldName: To
         Type:
-          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085564576072450
         LinkedVariable:
           rid: -2
     - rid: 5225085564576072449
-      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1002,7 +1088,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085564576072450
-      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1021,8 +1108,7 @@ MonoBehaviour:
         - rid: 5225085564576072545
         - rid: 5225085564576072546
         NodeType:
-          m_SerializableType: realvirtual.DriveToAction, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.DriveToAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 10475165389101816373
           m_Value1: 742504781950690682
@@ -1054,8 +1140,7 @@ MonoBehaviour:
       data:
         FieldName: Drive
         Type:
-          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         LocalValue:
           rid: 5225085564576072549
         LinkedVariable:
@@ -1065,14 +1150,14 @@ MonoBehaviour:
       data:
         FieldName: Position
         Type:
-          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085564576072550
         LinkedVariable:
           rid: -2
     - rid: 5225085564576072549
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1080,7 +1165,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085564576072550
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1099,8 +1185,7 @@ MonoBehaviour:
         - rid: 5225085564576072553
         - rid: 5225085564576072554
         NodeType:
-          m_SerializableType: realvirtual.DriveToAction, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.DriveToAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 10475165389101816373
           m_Value1: 742504781950690682
@@ -1132,8 +1217,7 @@ MonoBehaviour:
       data:
         FieldName: Drive
         Type:
-          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         LocalValue:
           rid: 5225085564576072557
         LinkedVariable:
@@ -1143,14 +1227,14 @@ MonoBehaviour:
       data:
         FieldName: Position
         Type:
-          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085564576072558
         LinkedVariable:
           rid: -2
     - rid: 5225085564576072557
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1158,7 +1242,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085564576072558
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1177,8 +1262,7 @@ MonoBehaviour:
         - rid: 5225085564576072560
         - rid: 5225085564576072561
         NodeType:
-          m_SerializableType: Unity.Behavior.ParallelAllComposite, Unity.Behavior,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_SerializableType: Unity.Behavior.ParallelAllComposite, Unity.Behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 6216542881172158703
           m_Value1: 2191282456596108218
@@ -1217,8 +1301,7 @@ MonoBehaviour:
         - rid: 5225085564576072565
         - rid: 5225085564576072566
         NodeType:
-          m_SerializableType: Unity.Behavior.WaitForAllComposite, Unity.Behavior,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_SerializableType: Unity.Behavior.WaitForAllComposite, Unity.Behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 7660367652061089412
           m_Value1: 18313906318609194151
@@ -1257,8 +1340,7 @@ MonoBehaviour:
         - rid: 5225085564576072568
         - rid: 5225085564576072569
         NodeType:
-          m_SerializableType: realvirtual.SetSignalBoolAction, realvirtual.base,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.SetSignalBoolAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 3888114979382698863
           m_Value1: 14095855940551002499
@@ -1294,7 +1376,8 @@ MonoBehaviour:
         LinkedVariable:
           rid: 4295969331626377325
     - rid: 5225085564576072571
-      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1306,14 +1389,14 @@ MonoBehaviour:
       data:
         FieldName: To
         Type:
-          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085564576072573
         LinkedVariable:
           rid: -2
     - rid: 5225085564576072573
-      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1332,8 +1415,7 @@ MonoBehaviour:
         - rid: 5225085564988424406
         - rid: 5225085564988424407
         NodeType:
-          m_SerializableType: Unity.Behavior.WaitForAllComposite, Unity.Behavior,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_SerializableType: Unity.Behavior.WaitForAllComposite, Unity.Behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 7660367652061089412
           m_Value1: 18313906318609194151
@@ -1369,8 +1451,7 @@ MonoBehaviour:
         - rid: 5225085564988424518
         - rid: 5225085564988424519
         NodeType:
-          m_SerializableType: Unity.Behavior.ParallelAllComposite, Unity.Behavior,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_SerializableType: Unity.Behavior.ParallelAllComposite, Unity.Behavior, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 6216542881172158703
           m_Value1: 2191282456596108218
@@ -1479,8 +1560,7 @@ MonoBehaviour:
         - rid: 5225085582504625144
         - rid: 5225085582504625145
         NodeType:
-          m_SerializableType: realvirtual.StartDriveToAction, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.StartDriveToAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 5207008336281378184
           m_Value1: 10181210640123889722
@@ -1510,8 +1590,7 @@ MonoBehaviour:
       data:
         FieldName: Drive
         Type:
-          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         LocalValue:
           rid: 5225085582504625148
         LinkedVariable:
@@ -1521,14 +1600,14 @@ MonoBehaviour:
       data:
         FieldName: Destination
         Type:
-          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085582504625149
         LinkedVariable:
           rid: -2
     - rid: 5225085582504625148
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1536,7 +1615,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085582504625149
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1591,8 +1671,7 @@ MonoBehaviour:
         - rid: 5225085582788788226
         - rid: 5225085582788788227
         NodeType:
-          m_SerializableType: realvirtual.StartDriveToAction, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.StartDriveToAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 5207008336281378184
           m_Value1: 10181210640123889722
@@ -1622,8 +1701,7 @@ MonoBehaviour:
       data:
         FieldName: Drive
         Type:
-          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         LocalValue:
           rid: 5225085582788788230
         LinkedVariable:
@@ -1633,14 +1711,14 @@ MonoBehaviour:
       data:
         FieldName: Destination
         Type:
-          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085582788788231
         LinkedVariable:
           rid: -2
     - rid: 5225085582788788230
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1648,7 +1726,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085582788788231
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1668,8 +1747,7 @@ MonoBehaviour:
         - rid: 5225085582788788349
         - rid: 5225085582788788350
         NodeType:
-          m_SerializableType: realvirtual.WaitForDrivePositionAction, realvirtual.base,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.WaitForDrivePositionAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 15450438886760304400
           m_Value1: 912247687982007957
@@ -1699,8 +1777,7 @@ MonoBehaviour:
       data:
         FieldName: Drive
         Type:
-          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         LocalValue:
           rid: 5225085582788788353
         LinkedVariable:
@@ -1710,14 +1787,14 @@ MonoBehaviour:
       data:
         FieldName: Position
         Type:
-          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085582788788354
         LinkedVariable:
           rid: -2
     - rid: 5225085582788788353
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1725,7 +1802,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085582788788354
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1745,8 +1823,7 @@ MonoBehaviour:
         - rid: 5225085582788788356
         - rid: 5225085582788788357
         NodeType:
-          m_SerializableType: realvirtual.WaitForDrivePositionAction, realvirtual.base,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.WaitForDrivePositionAction, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 15450438886760304400
           m_Value1: 912247687982007957
@@ -1776,8 +1853,7 @@ MonoBehaviour:
       data:
         FieldName: Drive
         Type:
-          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_SerializableType: realvirtual.Drive, realvirtual.base, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
         LocalValue:
           rid: 5225085582788788360
         LinkedVariable:
@@ -1787,14 +1863,14 @@ MonoBehaviour:
       data:
         FieldName: Position
         Type:
-          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
+          m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         LocalValue:
           rid: 5225085582788788361
         LinkedVariable:
           rid: -2
     - rid: 5225085582788788360
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1802,7 +1878,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085582788788361
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1887,7 +1964,8 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 5225085563249623358
-      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 1
@@ -1897,7 +1975,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085563249623474
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 17200292854554606948
@@ -1907,7 +1986,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085563249623510
-      type: {class: 'TypedVariableModel`1[[realvirtual.Sensor, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Sensor, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 16190775289793009510
@@ -1917,7 +1997,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085563249623922
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 11787259523568562822
@@ -1927,7 +2008,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085563249623924
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 11371141141850267685
@@ -1937,7 +2019,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085564576071748
-      type: {class: 'TypedVariableModel`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Signal, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 13324173454775863306
@@ -1947,7 +2030,8 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085564576072562
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 9434105263882083999
@@ -1986,7 +2070,8 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 3826358870995632768
-      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 1
@@ -1994,7 +2079,8 @@ MonoBehaviour:
         Name: Self
         m_Value: {fileID: 0}
     - rid: 3826358870995632769
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 17200292854554606948
@@ -2002,7 +2088,8 @@ MonoBehaviour:
         Name: ConveyorDrive
         m_Value: {fileID: 0}
     - rid: 3826358870995632770
-      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 16190775289793009510
@@ -2010,7 +2097,8 @@ MonoBehaviour:
         Name: ConveyorSensor
         m_Value: {fileID: 0}
     - rid: 3826358870995632771
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 11787259523568562822
@@ -2018,7 +2106,8 @@ MonoBehaviour:
         Name: Axis1
         m_Value: {fileID: 0}
     - rid: 3826358870995632772
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 11371141141850267685
@@ -2026,7 +2115,8 @@ MonoBehaviour:
         Name: Axis3
         m_Value: {fileID: 0}
     - rid: 3826358870995632773
-      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 13324173454775863306
@@ -2034,7 +2124,8 @@ MonoBehaviour:
         Name: SignalGrip
         m_Value: {fileID: 0}
     - rid: 3826358870995632774
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 9434105263882083999

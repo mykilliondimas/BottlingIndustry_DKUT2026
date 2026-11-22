@@ -73,6 +73,7 @@ public class UnityPLCConnectBridge : MonoBehaviour
     private bool _loggedPrivilegeError;
     private bool _loggedConnectionSuccess;
     private bool _loggedPlcRunAttached;
+    private bool _loggedExecutableNotFound;
 
     private void Awake()
     {
@@ -148,29 +149,52 @@ public class UnityPLCConnectBridge : MonoBehaviour
         _resolvedExePath = string.Empty;
         serviceExeFound = false;
 
-        if (string.IsNullOrWhiteSpace(customExePath))
-            return;
-
-        string cleaned = customExePath.Trim().Trim('"').Trim();
-        if (string.IsNullOrEmpty(cleaned))
-            return;
-
         try
         {
-            if (Directory.Exists(cleaned))
-                cleaned = Path.Combine(cleaned, "PLCSimUnity.exe");
-            else if (!cleaned.EndsWith(".exe", StringComparison.OrdinalIgnoreCase) && File.Exists(cleaned + ".exe"))
-                cleaned += ".exe";
+            string projectRoot = Directory.GetParent(Application.dataPath)?.FullName;
+            var candidates = new List<string>();
+            string configuredPath = customExePath == null ? string.Empty : customExePath.Trim().Trim('"').Trim();
 
-            if (File.Exists(cleaned))
+            if (!string.IsNullOrEmpty(configuredPath))
+                candidates.Add(Path.IsPathRooted(configuredPath)
+                    ? configuredPath
+                    : Path.Combine(projectRoot ?? Application.dataPath, configuredPath));
+
+            if (!string.IsNullOrEmpty(projectRoot))
             {
-                _resolvedExePath = cleaned;
+                candidates.Add(Path.Combine(projectRoot, "PLCSimUnity", "PLCSimUnity.exe"));
+                candidates.Add(Path.Combine(projectRoot, "UnityPLCConnect", "PLCSimUnity.exe"));
+                candidates.Add(Path.Combine(projectRoot, "PLCSimUnity.exe"));
+            }
+
+            foreach (string candidate in candidates)
+            {
+                string path = candidate;
+                if (Directory.Exists(path))
+                    path = Path.Combine(path, "PLCSimUnity.exe");
+                else if (!path.EndsWith(".exe", StringComparison.OrdinalIgnoreCase))
+                    path += ".exe";
+
+                if (!File.Exists(path))
+                    continue;
+
+                _resolvedExePath = Path.GetFullPath(path);
                 serviceExeFound = true;
+                _loggedExecutableNotFound = false;
+                return;
+            }
+
+            if (!_loggedExecutableNotFound)
+            {
+                Debug.LogWarning(
+                    "[UnityPLCConnectBridge] PLCSimUnity.exe was not found. Set Custom Exe Path or place it " +
+                    "in the project-root PLCSimUnity or UnityPLCConnect folder.");
+                _loggedExecutableNotFound = true;
             }
         }
         catch (Exception ex)
         {
-            Debug.LogWarning($"[UnityPLCConnectBridge] Invalid Custom Exe Path '{customExePath}': {ex.Message}");
+            Debug.LogWarning($"[UnityPLCConnectBridge] Could not resolve PLCSimUnity.exe: {ex.Message}");
         }
     }
 

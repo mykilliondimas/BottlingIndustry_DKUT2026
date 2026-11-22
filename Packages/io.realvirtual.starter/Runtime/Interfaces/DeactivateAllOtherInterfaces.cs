@@ -12,7 +12,7 @@ namespace realvirtual
         {
             if (!enabled) return;
            
-            InterfaceBaseClass[] interfaces = FindObjectsByType<InterfaceBaseClass>(FindObjectsInactive.Include,FindObjectsSortMode.None);
+            InterfaceBaseClass[] interfaces = FindObjectsByType<InterfaceBaseClass>(FindObjectsInactive.Include);
       
             foreach (InterfaceBaseClass intface in interfaces)
             {

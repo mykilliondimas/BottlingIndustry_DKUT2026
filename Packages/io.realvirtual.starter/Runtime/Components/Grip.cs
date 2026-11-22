@@ -713,7 +713,7 @@ namespace realvirtual
             if (realvirtualController != null && realvirtualController.Scale > 0f)
                 return realvirtualController.Scale;
             // Edit-mode fallback: find controller in scene
-            var ctrl = FindFirstObjectByType<realvirtualController>();
+            var ctrl = FindAnyObjectByType<realvirtualController>();
             if (ctrl != null && ctrl.Scale > 0f)
                 return ctrl.Scale;
             return 1000f; // fallback: 1000mm = 1m

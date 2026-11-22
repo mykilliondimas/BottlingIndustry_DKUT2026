@@ -46,7 +46,7 @@ namespace realvirtual
             if (!_groupCacheValid || _cachedAllGroups == null)
             {
                 _cachedAllGroups = Object.FindObjectsByType<Group>(
-                    FindObjectsInactive.Include, FindObjectsSortMode.None);
+                    FindObjectsInactive.Include);
                 _groupCacheValid = true;
             }
             return _cachedAllGroups;
@@ -64,7 +64,7 @@ namespace realvirtual
 #if UNITY_EDITOR
             var groupComponents = GetCachedGroups();
 #else
-            var groupComponents = Object.FindObjectsByType<Group>(FindObjectsSortMode.None);
+            var groupComponents = Object.FindObjectsByType<Group>();
 #endif
             
             foreach (var group in groupComponents)
@@ -90,7 +90,7 @@ namespace realvirtual
 #if UNITY_EDITOR
             var allGroups = GetCachedGroups();
 #else
-            var allGroups = Object.FindObjectsByType<Group>(FindObjectsSortMode.None);
+            var allGroups = Object.FindObjectsByType<Group>();
 #endif
             
             foreach (var group in allGroups)

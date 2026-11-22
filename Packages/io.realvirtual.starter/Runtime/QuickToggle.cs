@@ -350,12 +350,12 @@ namespace realvirtual
                 EditorApplication.update -= HandleEditorUpdate;
                 ResetVars();
                 EditorApplication.update += HandleEditorUpdate;
-                EditorApplication.hierarchyWindowItemByEntityIdOnGUI += DrawHierarchyItem;
+                EditorApplication.hierarchyWindowItemOnGUI += DrawHierarchyItem;
             }
             else
             {
                 EditorApplication.update -= HandleEditorUpdate;
-                EditorApplication.hierarchyWindowItemByEntityIdOnGUI -= DrawHierarchyItem;
+                EditorApplication.hierarchyWindowItemOnGUI -= DrawHierarchyItem;
             }
 
             EditorApplication.RepaintHierarchyWindow();
@@ -448,19 +448,22 @@ namespace realvirtual
             return null;
         }
        
-        private static void DrawHierarchyItem(UnityEngine.EntityId instanceID, Rect selectionRect)
+        private static void DrawHierarchyItem(int instanceId, Rect selectionRect)
         {
             Color fontColor = Color.blue;
             Color backgroundColor = new Color(.76f, .76f, .76f);
-            int id = instanceID.GetHashCode();
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
             Signal _signal = null;
-            BaseDrive _drive = null;
-            Behaviour _behaviour = null;
+            BaseDrive _drive = null;;
+            Behaviour _behaviour = null;;
             InterfaceBaseClass _interface2 = null; ;
             BaseSource _source = null;
             BaseSensor _sensor = null;
             ControlLogic _controllogic = null; ;
-            BaseGrip _grip = null;;
+            BaseGrip _grip = null; ;
             BaseTransportSurface _tansport = null;;
             Group group = null;;
             Kinematic kinematic = null;
@@ -481,10 +484,14 @@ namespace realvirtual
             if (icondrive == null)
                 return;
 
+<<<<<<< Updated upstream
+            GameObject target = EditorUtility.EntityIdToObject(instanceID) as GameObject;
+=======
 #pragma warning disable CS0618 // InstanceIDToObject is obsolete - no documented replacement for int instanceId
-            GameObject target = EditorUtility.EntityIdToObject(instanceID.GetHashCode()) as GameObject;
+            GameObject target = EditorUtility.InstanceIDToObject(instanceId) as GameObject;
 #pragma warning restore CS0618
 
+>>>>>>> Stashed changes
 
             if (target == null)
                 return;
@@ -530,7 +537,8 @@ namespace realvirtual
             curpos += size;
 
             // Allow professional package to draw additional icons (e.g., CAD status)
-            OnDrawProfessionalIcons?.Invoke(instanceID.GetHashCode(), selectionRect, target, behaviors, ref curpos);
+            OnDrawProfessionalIcons?.Invoke(instanceId, selectionRect, target, behaviors, ref curpos);
+
             Rect sensorrect = new Rect();
             sensorrect.center = new Vector2(0,0);
             Rect unforcrect = new Rect();

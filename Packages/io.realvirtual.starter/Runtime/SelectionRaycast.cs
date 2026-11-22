@@ -173,7 +173,7 @@ namespace realvirtual
 
             camera = GetComponent<Camera>();
             // get all meshrenderers
-            var meshrenderers = FindObjectsByType<MeshRenderer>(FindObjectsSortMode.None);
+            var meshrenderers = FindObjectsByType<MeshRenderer>();
 
             if (AutomaticallyAddColliders)
                 foreach (var comp in meshrenderers)

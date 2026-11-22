@@ -124,7 +124,7 @@ namespace realvirtual
         [UnityTest]
         public IEnumerator Test_DriveTo_ZeroTargetSpeed_LogsErrorInsteadOfThrowing()
         {
-            var controller = Object.FindFirstObjectByType<realvirtualController>();
+            var controller = Object.FindAnyObjectByType<realvirtualController>();
             if (controller == null)
             {
                 var controllerObject = new GameObject("SmoothMotionTestController");

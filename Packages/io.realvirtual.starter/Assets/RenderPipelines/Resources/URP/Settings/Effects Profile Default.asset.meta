@@ -11,6 +11,5 @@ AssetOrigin:
   productId: 366612
   packageName: realvirtual Digital Twin Starter 6.3
   packageVersion: 6.3.6-10297
-  assetPath: Packages/io.realvirtual.starter/Assets/RenderPipelines/Resources/URP/Settings/Effects
-    Profile Default.asset
+  assetPath: Packages/io.realvirtual.starter/Assets/RenderPipelines/Resources/URP/Settings/Effects Profile Default.asset
   uploadId: 1012782

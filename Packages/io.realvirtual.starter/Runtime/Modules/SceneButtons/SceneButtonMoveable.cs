@@ -17,7 +17,7 @@ namespace realvirtual
 
         public Material baseMaterial;
         public Material activeMaterial;
-        public new MeshRenderer renderer;
+        public MeshRenderer renderer;
 
         private Vector3 initialPosition;
         private Quaternion initialRotation;

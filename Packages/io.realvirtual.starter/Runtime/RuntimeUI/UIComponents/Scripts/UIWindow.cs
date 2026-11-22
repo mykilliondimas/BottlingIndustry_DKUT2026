@@ -76,7 +76,7 @@ namespace realvirtual
         {
             Window.SetActive(true);
             Global.SetActiveSubObjects(Window, true);
-            _controller = FindFirstObjectByType<realvirtualController>();
+            _controller = FindAnyObjectByType<realvirtualController>();
             SubmitButtonObject = Global.GetGameObjectByName("SubmitButton", ButtonAreaBottom);
             CancelButtonObject = Global.GetGameObjectByName("CancelButton", ButtonAreaBottom);
             ResizeButton = Global.GetGameObjectByName("WindowDragGizmo", ButtonAreaBottom);

@@ -1,4 +1,4 @@
-﻿// realvirtual (R) Framework for Automation Concept Design, Virtual Commissioning and 3D-HMI
+// realvirtual (R) Framework for Automation Concept Design, Virtual Commissioning and 3D-HMI
 // Copyright(c) 2019 realvirtual GmbH - Usage of this source code only allowed based on License conditions see https://realvirtual.io/en/company/license
 
 #if REALVIRTUAL && UNITY_EDITOR
@@ -81,7 +81,7 @@ namespace realvirtual
                 yield return LoadScene(scene);
                 LogAssert.Expect(LogType.Exception, "test");
                 // get the TestConfig
-                var testconfig = Object.FindFirstObjectByType<TestModelController>();
+                var testconfig = Object.FindAnyObjectByType<TestModelController>();
       
                 if (testconfig == null)
                 {

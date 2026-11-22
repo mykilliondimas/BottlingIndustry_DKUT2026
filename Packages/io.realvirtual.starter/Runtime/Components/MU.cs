@@ -244,7 +244,7 @@ namespace realvirtual
         private List<Material> materials = new List<Material>();
         private Vector3 lastPosition;
         private Vector3 speedvector;
-        private bool rigidbodynotnull;
+        private bool rigidbodynotnull = false;
         private float lasttime;
         private int interpolatenum = 0;
         private bool hasParentMUs = false;

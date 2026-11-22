@@ -15,8 +15,8 @@ public class CopyUnityPLCConnectOnBuild : IPostprocessBuildWithReport
             return;
 
         string buildOutputDir = Path.GetDirectoryName(report.summary.outputPath);
-        string sourceDir = Path.Combine(Application.dataPath, "../UnityPLCConnect");
-        string targetDir = Path.Combine(buildOutputDir, "UnityPLCConnect");
+        string sourceDir = Path.Combine(Application.dataPath, "../PLCSimUnity");
+        string targetDir = Path.Combine(buildOutputDir, "PLCSimUnity");
 
         if (!Directory.Exists(sourceDir))
         {

@@ -728,7 +728,7 @@ namespace realvirtual
 #if UNITY_EDITOR
             var groupcomps = Groups.GetCachedGroups();
 #else
-            var groupcomps = Object.FindObjectsByType<Group>(FindObjectsSortMode.None);
+            var groupcomps = Object.FindObjectsByType<Group>();
 #endif
             foreach (var groupcomp in groupcomps)
             {

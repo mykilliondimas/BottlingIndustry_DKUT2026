@@ -122,7 +122,7 @@ namespace realvirtual
         [ContextMenu("Diagnose Signs")]
         private void DiagnoseSigns()
         {
-            var signs = FindObjectsByType<Sign>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            var signs = FindObjectsByType<Sign>(FindObjectsInactive.Include);
             var sb = new System.Text.StringBuilder();
             sb.AppendLine($"[Sign] Diagnose - {signs.Length} sign(s) in scene:");
             foreach (var s in signs)

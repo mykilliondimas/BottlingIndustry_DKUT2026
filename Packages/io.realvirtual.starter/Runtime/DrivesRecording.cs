@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -96,7 +96,7 @@ namespace realvirtual
             if (!drivesRecorder.RecordAllDrivesWithinScene)
                 drives = drivesRecorder.GetComponentsInChildren<Drive>();
             else
-                drives = FindObjectsByType<Drive>(FindObjectsSortMode.None);
+                drives = FindObjectsByType<Drive>();
             
             RecordedDrives = new List<RecordedDrive>();
             var id = 0;

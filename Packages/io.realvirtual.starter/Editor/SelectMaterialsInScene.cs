@@ -1,4 +1,4 @@
-﻿// realvirtual.io (formerly game4automation) (R) a Framework for Automation Concept Design, Virtual Commissioning and 3D-HMI
+// realvirtual.io (formerly game4automation) (R) a Framework for Automation Concept Design, Virtual Commissioning and 3D-HMI
 // Copyright(c) 2019 realvirtual GmbH - Usage of this source code only allowed based on License conditions see https://realvirtual.io/unternehmen/lizenz  
 
 
@@ -25,7 +25,7 @@ namespace realvirtual
             }
 
             // get all renderers in the scene
-            var renderers = GameObject.FindObjectsByType<Renderer>(FindObjectsSortMode.None);
+            var renderers = GameObject.FindObjectsByType<Renderer>();
             var oneselected = false;
             // check if the material is containted in the renderers materials list
             foreach (var renderer in renderers)

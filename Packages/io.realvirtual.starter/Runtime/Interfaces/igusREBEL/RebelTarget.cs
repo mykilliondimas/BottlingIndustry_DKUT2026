@@ -36,7 +36,7 @@ namespace realvirtual
                 // if it is still null find it anywhere
                 if (rebelInterface == null)
                 {
-                    rebelInterface = FindFirstObjectByType<igusREBELInterface>();
+                    rebelInterface = FindAnyObjectByType<igusREBELInterface>();
                 }
             }
             // print out error if rebelinterface not defined

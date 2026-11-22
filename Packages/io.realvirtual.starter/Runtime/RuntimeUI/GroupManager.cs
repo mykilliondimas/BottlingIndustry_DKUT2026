@@ -151,7 +151,7 @@ namespace realvirtual
      
         public static List<Kinematic> GetAllGroupsConnectedtoKinematic()
         {
-            var kinematicComponents = FindObjectsByType<Kinematic>(FindObjectsInactive.Include,FindObjectsSortMode.None).Where(k => k.IntegrateGroupEnable).ToList();         
+            var kinematicComponents = FindObjectsByType<Kinematic>(FindObjectsInactive.Include).Where(k => k.IntegrateGroupEnable).ToList();         
             return kinematicComponents;
         }
         public static List<string> GetAllVisualGroups()
@@ -346,7 +346,7 @@ namespace realvirtual
 #if UNITY_EDITOR
             var sourcedata = realvirtual.Groups.GetCachedGroups();
 #else
-            var sourcedata= FindObjectsByType<Group>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            var sourcedata= FindObjectsByType<Group>(FindObjectsInactive.Include);
 #endif
             List<Kinematic> kinematicGroups = GetAllGroupsConnectedtoKinematic();
             List<string> kinematicGroupNames = kinematicGroups.Select(k => k.GetGroupName()).ToList();

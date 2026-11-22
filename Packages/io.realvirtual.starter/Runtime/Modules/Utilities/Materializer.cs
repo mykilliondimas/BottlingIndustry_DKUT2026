@@ -4,7 +4,7 @@ namespace realvirtual
 {
     public class Materializer : MonoBehaviour
     {
-        public new MeshRenderer renderer;
+        public MeshRenderer renderer;
         public Material[] materials;
         public int submeshIndex;
 

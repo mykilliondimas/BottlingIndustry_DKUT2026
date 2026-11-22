@@ -4895,8 +4895,7 @@ namespace Sharp7
 		#region [S7 NckTelegrams]
 		// Size NCK-Protocoll not equal to S7-Any-Protocoll
 		private static int Size_NckRD = 29; // Header Size when Reading 
-		private static int Size_NckWR = 33; // Header Size when Writing
-		
+
 		// S7 NCK Read/Write Request Header (contains also ISO Header and COTP Header)
 		byte[] S7_NckRW = { // 31-35 bytes
             0x03,0x00,
@@ -5508,8 +5507,6 @@ namespace Sharp7
 	public static class S7Drv
 	{
 
-		private static Int64 bias = 621355968000000000; // "decimicros" between 0001-01-01 00:00:00 and 1970-01-01 00:00:00
-
 		private static int BCDtoByte(byte B)
 		{
 			return ((B >> 4) * 10) + (B & 0x0F);
@@ -5882,8 +5879,6 @@ namespace Sharp7
 
 	public static class S7Nck
 	{
-
-		private static Int64 bias = 621355968000000000; // "decimicros" between 0001-01-01 00:00:00 and 1970-01-01 00:00:00
 
 		private static int BCDtoByte(byte B)
 		{

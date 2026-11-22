@@ -27,7 +27,7 @@ namespace realvirtual
             // only count all x updates
             if (Time.frameCount % CountAllxUpdates != 0) return;
             // get number of MUs in scene
-            var mus = FindObjectsByType<MU>(FindObjectsSortMode.None);
+            var mus = FindObjectsByType<MU>();
             text.text = CounterText+mus.Length.ToString();
         }
     }

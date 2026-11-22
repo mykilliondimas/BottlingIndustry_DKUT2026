@@ -106,7 +106,7 @@ namespace realvirtual
             if (component == null) return;
             
             // Check if component validation is enabled
-            var controller = UnityEngine.Object.FindFirstObjectByType<realvirtualController>();
+            var controller = UnityEngine.Object.FindAnyObjectByType<realvirtualController>();
             if (controller != null && !controller.ValidationOnComponentsAdded)
                 return;
             
@@ -135,7 +135,7 @@ namespace realvirtual
             if (gameObject == null) return;
             
             // Check if component validation is enabled
-            var controller = UnityEngine.Object.FindFirstObjectByType<realvirtualController>();
+            var controller = UnityEngine.Object.FindAnyObjectByType<realvirtualController>();
             if (controller != null && !controller.ValidationOnComponentsAdded)
                 return;
             
@@ -178,7 +178,7 @@ namespace realvirtual
                 Initialize();
             }
                 
-            var allComponents = UnityEngine.Object.FindObjectsByType<Component>(FindObjectsSortMode.None);
+            var allComponents = UnityEngine.Object.FindObjectsByType<Component>();
             int behaviorInterfaceCount = 0;
             
             foreach (var component in allComponents)

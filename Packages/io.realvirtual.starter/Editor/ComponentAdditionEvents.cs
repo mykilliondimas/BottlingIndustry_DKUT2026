@@ -16,7 +16,7 @@ namespace realvirtual
     public static class ComponentAdditionEvents
     {
         // Track components to detect additions
-        private static Dictionary<EntityId, HashSet<System.Type>> gameObjectComponents = new Dictionary<EntityId, HashSet<System.Type>>();
+        private static Dictionary<int, HashSet<System.Type>> gameObjectComponents = new Dictionary<int, HashSet<System.Type>>();
         
         // Events for external systems
         public static event Action OnSystemInitialized;
@@ -51,26 +51,26 @@ namespace realvirtual
                 if (eventType == ObjectChangeKind.ChangeGameObjectStructure)
                 {
                     stream.GetChangeGameObjectStructureEvent(i, out var changeEvent);
-                    HandleStructureChange(changeEvent.entityId);
+                    HandleStructureChange(changeEvent.instanceId);
                 }
                 else if (eventType == ObjectChangeKind.CreateGameObjectHierarchy)
                 {
                     stream.GetCreateGameObjectHierarchyEvent(i, out var createEvent);
-                    HandleNewGameObject(createEvent.entityId);
+                    HandleNewGameObject(createEvent.instanceId);
                 }
                 else if (eventType == ObjectChangeKind.DestroyGameObjectHierarchy)
                 {
                     stream.GetDestroyGameObjectHierarchyEvent(i, out var destroyEvent);
-                    HandleDestroyedGameObject(destroyEvent.entityId);
+                    HandleDestroyedGameObject(destroyEvent.instanceId);
                 }
             }
         }
         
         //! Handles structure changes to detect component additions and removals
-        private static void HandleStructureChange(EntityId instanceId)
+        private static void HandleStructureChange(int instanceId)
         {
 #pragma warning disable CS0618 // InstanceIDToObject is obsolete - no documented replacement for int instanceId
-            var go = EditorUtility.EntityIdToObject(instanceId) as GameObject;
+            var go = EditorUtility.InstanceIDToObject(instanceId) as GameObject;
 #pragma warning restore CS0618
             if (go == null) return;
             
@@ -104,10 +104,10 @@ namespace realvirtual
         }
         
         //! Handles newly created GameObjects to track their initial components
-        private static void HandleNewGameObject(EntityId instanceId)
+        private static void HandleNewGameObject(int instanceId)
         {
 #pragma warning disable CS0618 // InstanceIDToObject is obsolete - no documented replacement for int instanceId
-            var go = EditorUtility.EntityIdToObject(instanceId) as GameObject;
+            var go = EditorUtility.InstanceIDToObject(instanceId) as GameObject;
 #pragma warning restore CS0618
             if (go == null) return;
             
@@ -127,7 +127,7 @@ namespace realvirtual
         }
         
         //! Cleans up tracking when a GameObject is destroyed
-        private static void HandleDestroyedGameObject(EntityId instanceId)
+        private static void HandleDestroyedGameObject(int instanceId)
         {
             gameObjectComponents.Remove(instanceId);
         }
@@ -154,11 +154,11 @@ namespace realvirtual
         {
             gameObjectComponents.Clear();
             
-            var allGameObjects = UnityEngine.Object.FindObjectsByType<GameObject>(FindObjectsSortMode.None);
+            var allGameObjects = UnityEngine.Object.FindObjectsByType<GameObject>();
             
             foreach (var go in allGameObjects)
             {
-                var instanceId = go.GetEntityId();
+                var instanceId = go.GetInstanceID();
                 var components = go.GetComponents<Component>();
                 var componentTypes = new HashSet<System.Type>();
                 

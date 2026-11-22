@@ -121,7 +121,7 @@ namespace realvirtual
             var ctrl = GetComponentInParent<realvirtualController>();
             if (ctrl != null && ctrl.Scale > 0f)
                 return ctrl.Scale;
-            ctrl = FindFirstObjectByType<realvirtualController>();
+            ctrl = FindAnyObjectByType<realvirtualController>();
             if (ctrl != null && ctrl.Scale > 0f)
                 return ctrl.Scale;
             return 1000f;

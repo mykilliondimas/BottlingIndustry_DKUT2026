@@ -75,7 +75,7 @@ namespace realvirtual
                 {
                     currCam = MainCinemachineCamera;
                 }
-                currentCameras = FindObjectsByType<CinemachineVirtualCamera>(FindObjectsSortMode.None);
+                currentCameras = FindObjectsByType<CinemachineVirtualCamera>();
                
                 if (BlockUserMouseNavigation)
                 {

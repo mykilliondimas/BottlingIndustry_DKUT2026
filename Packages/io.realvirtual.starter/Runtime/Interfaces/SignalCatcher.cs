@@ -28,7 +28,7 @@ namespace realvirtual
             
             var collected = 0;
             // get all signals in whole model and place them here as a child object
-            Signal[] signals = FindObjectsByType<Signal>(FindObjectsInactive.Include,FindObjectsSortMode.None);
+            Signal[] signals = FindObjectsByType<Signal>(FindObjectsInactive.Include);
             foreach (Signal signal in signals)
             {
                 // check if this a child of an object that should be ignored
@@ -59,7 +59,7 @@ namespace realvirtual
             // now find all interfaces which are not this interface
             if (DeactivateOtherInterfaces)
             {
-                InterfaceBaseClass[] interfaces = FindObjectsByType<InterfaceBaseClass>(FindObjectsInactive.Include,FindObjectsSortMode.None);
+                InterfaceBaseClass[] interfaces = FindObjectsByType<InterfaceBaseClass>(FindObjectsInactive.Include);
                 foreach (InterfaceBaseClass intface in interfaces)
                 {
                     if (intface.gameObject == this.gameObject) continue;       // make sure that it is not the current interface

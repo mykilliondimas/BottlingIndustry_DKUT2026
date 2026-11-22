@@ -54,7 +54,7 @@ namespace realvirtual
         
         public static bool IsDarkSkin()
         {
-            return GetCurrentSkin().name == FindFirstObjectByType<SkinController>(FindObjectsInactive.Include).DarkSkin.name;
+            return GetCurrentSkin().name == FindAnyObjectByType<SkinController>(FindObjectsInactive.Include).DarkSkin.name;
         } 
         
         public static void ApplySkin(RealvirtualUISkin skin)
@@ -97,7 +97,7 @@ namespace realvirtual
         private static List<T> GetAllObjectsWithInterface<T>() where T : class
         {
             List<T> results = new List<T>();
-            GameObject[] allObjects = GameObject.FindObjectsByType<GameObject>(FindObjectsSortMode.None);
+            GameObject[] allObjects = GameObject.FindObjectsByType<GameObject>();
         
             foreach (GameObject go in allObjects)
             {

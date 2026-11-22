@@ -17,7 +17,7 @@ namespace realvirtual
     private void Awake()
     {
       layoutElement = GetComponentInParent<Canvas>();
-      layoutElements.AddRange(FindObjectsByType<Canvas>(FindObjectsInactive.Include, FindObjectsSortMode.None));
+      layoutElements.AddRange(FindObjectsByType<Canvas>(FindObjectsInactive.Include));
     }
 
     private void OnEnable()

@@ -16,7 +16,7 @@ namespace realvirtual.MCP.Tools
         [McpTool("List all MUs (Moving Units) with status")]
         public static string MUList()
         {
-            var mus = Object.FindObjectsByType<MU>(FindObjectsSortMode.None);
+            var mus = Object.FindObjectsByType<MU>();
             var arr = new JArray();
 
             foreach (var mu in mus)
@@ -72,7 +72,7 @@ namespace realvirtual.MCP.Tools
         [McpTool("List all Grips with status")]
         public static string GripList()
         {
-            var grips = Object.FindObjectsByType<Grip>(FindObjectsSortMode.None);
+            var grips = Object.FindObjectsByType<Grip>();
             var arr = new JArray();
 
             foreach (var grip in grips)
@@ -114,7 +114,7 @@ namespace realvirtual.MCP.Tools
         [McpTool("List all GripTargets with occupancy status")]
         public static string GripTargetList()
         {
-            var targets = Object.FindObjectsByType<GripTarget>(FindObjectsSortMode.None);
+            var targets = Object.FindObjectsByType<GripTarget>();
             var arr = new JArray();
 
             foreach (var target in targets)
@@ -151,7 +151,7 @@ namespace realvirtual.MCP.Tools
         [McpTool("List all TransportSurfaces with speed and status")]
         public static string TransportSurfaceList()
         {
-            var surfaces = Object.FindObjectsByType<TransportSurface>(FindObjectsSortMode.None);
+            var surfaces = Object.FindObjectsByType<TransportSurface>();
             var arr = new JArray();
 
             foreach (var surface in surfaces)

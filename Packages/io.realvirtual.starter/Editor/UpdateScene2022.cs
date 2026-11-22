@@ -19,12 +19,12 @@ namespace realvirtual
             }
             
             // get all needed components in scene
-            var sensors = GameObject.FindObjectsByType<Sensor>(FindObjectsSortMode.None);
-            var transportsurfaces = GameObject.FindObjectsByType<TransportSurface>(FindObjectsSortMode.None);
-            var mus = GameObject.FindObjectsByType<MU>(FindObjectsSortMode.None);
-            var sinks = GameObject.FindObjectsByType<Sink>(FindObjectsSortMode.None);
-            var sources = GameObject.FindObjectsByType<Source>(FindObjectsSortMode.None);
-            var transforms = GameObject.FindObjectsByType<Transform>(FindObjectsSortMode.None);
+            var sensors = GameObject.FindObjectsByType<Sensor>();
+            var transportsurfaces = GameObject.FindObjectsByType<TransportSurface>();
+            var mus = GameObject.FindObjectsByType<MU>();
+            var sinks = GameObject.FindObjectsByType<Sink>();
+            var sources = GameObject.FindObjectsByType<Source>();
+            var transforms = GameObject.FindObjectsByType<Transform>();
             
             // change layers in colliders
             foreach (var transform in transforms)

@@ -1,4 +1,4 @@
-﻿// realvirtual.io (formerly game4automation) (R) a Framework for Automation Concept Design, Virtual Commissioning and 3D-HMI
+// realvirtual.io (formerly game4automation) (R) a Framework for Automation Concept Design, Virtual Commissioning and 3D-HMI
 // Copyright(c) 2019 realvirtual GmbH - Usage of this source code only allowed based on License conditions see https://realvirtual.io/unternehmen/lizenz  
 
 #pragma warning disable 0168
@@ -364,7 +364,7 @@ namespace realvirtual
         //! Hides the info box permanently by saving preference
         public static void HideInfo()
         {
-            var controllerInstance = FindFirstObjectByType<realvirtualController>();
+            var controllerInstance = FindAnyObjectByType<realvirtualController>();
             controllerInstance.HideInfoBox = true;
             Persistence.Save(controllerInstance.HideInfoBox, controllerInstance.name, "HideInfoBox");
             Logger.Message("Infobox hidden for future starts", controllerInstance);
@@ -382,7 +382,7 @@ namespace realvirtual
         //! Enables connection mode and saves the preference
         public static void TurnOnConnectMode()
         {
-            var controllerInstance = FindFirstObjectByType<realvirtualController>();
+            var controllerInstance = FindAnyObjectByType<realvirtualController>();
             controllerInstance.Connected = true;
             controllerInstance.ConnectionButtonToggleOn();
             Persistence.Save(controllerInstance.Connected, "realvirtualController", "Connected");
@@ -394,7 +394,7 @@ namespace realvirtual
         //! Disables connection mode and saves the preference
         public static void TurnOffConnectMode()
         {
-            var controllerInstance =  FindFirstObjectByType<realvirtualController>();
+            var controllerInstance =  FindAnyObjectByType<realvirtualController>();
             controllerInstance.Connected = false;
             controllerInstance.ConnectionButtonToggleOff();
             Persistence.Save(controllerInstance.Connected, "realvirtualController", "Connected");
@@ -407,7 +407,7 @@ namespace realvirtual
         //! Enables debug mode and saves the preference (requires restart to debug from start)
         public static void TurnOnDebugMode()
         {
-            var controllerInstance =  FindFirstObjectByType<realvirtualController>();
+            var controllerInstance =  FindAnyObjectByType<realvirtualController>();
             controllerInstance.DebugMode = true;
             Persistence.Save(controllerInstance.DebugMode, "realvirtualController", "DebugMode");
             Logger.Message("Debug Mode turned on - Restart Player to debug from Start on", controllerInstance);
@@ -417,7 +417,7 @@ namespace realvirtual
         //! Disables debug mode and saves the preference
         public static void TurnOffDebugMode()
         {
-            var controllerInstance =  FindFirstObjectByType<realvirtualController>();
+            var controllerInstance =  FindAnyObjectByType<realvirtualController>();
             controllerInstance.DebugMode = false;
             Persistence.Save(controllerInstance.DebugMode, "realvirtualController", "DebugMode");
             Logger.Message("Debug Mode turned off - saved to Player Prefs", controllerInstance);
@@ -440,7 +440,7 @@ namespace realvirtual
             _timeSyncedComponents = new List<ITimeSyncedPhysics>();
             _timeSyncedPhysicsMode = false;
 
-            var controllerInstance = FindFirstObjectByType<realvirtualController>();
+            var controllerInstance = FindAnyObjectByType<realvirtualController>();
 
             if (controllerInstance?.DebugMode == true)
                 Logger.Message("<color=green>---------------- INIT realvirtualController - Setup PlayerLoop FixedUpdate Events</color>", controllerInstance);
@@ -572,8 +572,8 @@ namespace realvirtual
             if (DebugMode)
                 Logger.Message("<color=green>---------------- INIT realvirtualController - Discover FixedUpdate Handlers</color>", this);
 
-            var preHandlers = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).OfType<IPreFixedUpdate>();
-            var postHandlers = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).OfType<IPostFixedUpdate>();
+            var preHandlers = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude).OfType<IPreFixedUpdate>();
+            var postHandlers = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude).OfType<IPostFixedUpdate>();
 
             RegisterPreFixedUpdateHandlers(preHandlers);
             RegisterPostFixedUpdateHandlers(postHandlers);
@@ -741,7 +741,7 @@ namespace realvirtual
 
             // call all IInitStart Interfaces
             if (DebugMode) Logger.Message("<color=green>---------------- INIT realvirtualController - Call IInitStart</color>");
-            var initStarts = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude,FindObjectsSortMode.None).OfType<IInitStart>();
+            var initStarts = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude).OfType<IInitStart>();
             foreach (var initstart in initStarts)
             {
                 initstart.InitStart();
@@ -759,13 +759,13 @@ namespace realvirtual
         {
             // call all IInitStart Interfaces
             if (DebugMode) Logger.Message("<color=green>---------------- INIT realvirtualController - Call IAllScenesLoaded</color>");
-            var iallscenesloaded = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude,FindObjectsSortMode.None).OfType<IAllScenesLoaded>();
+            var iallscenesloaded = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude).OfType<IAllScenesLoaded>();
             foreach (var allscenesloaded in iallscenesloaded)
             {
                 allscenesloaded.AllScenesLoaded();
             }
             if (DebugMode) Logger.Message("<color=green>---------------- INIT realvirtualController - Call IPostAllScenesLoaded</color>");
-            var ipostallscenesloaded = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude,FindObjectsSortMode.None).OfType<IPostAllScenesLoaded>();
+            var ipostallscenesloaded = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude).OfType<IPostAllScenesLoaded>();
             foreach (var ipostallscenes in ipostallscenesloaded)
             {
                 ipostallscenes.PostAllScenesLoaded();
@@ -786,7 +786,7 @@ namespace realvirtual
         {
             if (DebugMode) Logger.Message("<color=green>---------------- INIT realvirtualController - Call IOnInterfaceEnable for FastInterfaces</color>");
 
-            var fastInterfaces = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).OfType<IOnInterfaceEnable>();
+            var fastInterfaces = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude).OfType<IOnInterfaceEnable>();
             foreach (var fastInterface in fastInterfaces)
             {
                 fastInterface.OnInterfaceEnable();
@@ -856,7 +856,7 @@ namespace realvirtual
             {
                 // call all IInitEnable
                 if (DebugMode) Logger.Message("<color=green>---------------- INIT realvirtualController - OnEnable - Call IInitEnable</color>");
-                var initEnables = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude,FindObjectsSortMode.None).OfType<IInitEnable>();  
+                var initEnables = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude).OfType<IInitEnable>();  
                 foreach (var initenable in initEnables)
                 {
                     initenable.InitEnable();
@@ -914,7 +914,7 @@ namespace realvirtual
             HideGroupsOnStart();
 
             // Call all G4AAwake
-            var behaviors = Object.FindObjectsByType<realvirtualBehavior>(FindObjectsSortMode.None);
+            var behaviors = Object.FindObjectsByType<realvirtualBehavior>();
             foreach (var behavior in behaviors)
             {
                 behavior.AwakeAlsoDeactivated();
@@ -958,7 +958,7 @@ namespace realvirtual
             {
                 // call all IInitAwake
                 if (DebugMode) Logger.Message("<color=green>---------------- INIT realvirtualController - Awake - Call IInitAwake</color>");
-                var initAwakes = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude,FindObjectsSortMode.None).OfType<IInitAwake>();
+                var initAwakes = UnityEngine.Object.FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude).OfType<IInitAwake>();
                 foreach (var initawake in initAwakes)
                 {
                     initawake.InitAwake();
@@ -971,7 +971,7 @@ namespace realvirtual
         {
             if (DebugMode) Logger.Message("<color=yellow>---------------- STOP SIMULATION</color>");
             var realvirtualBehaviors =
-                UnityEngine.Object.FindObjectsByType<realvirtualBehavior>(FindObjectsSortMode.None);
+                UnityEngine.Object.FindObjectsByType<realvirtualBehavior>();
             // get all Game4automationBehaviors
             foreach (var behavior in realvirtualBehaviors)
             {
@@ -984,7 +984,7 @@ namespace realvirtual
         {
             if (DebugMode) Logger.Message("<color=yellow>---------------- PRE START SIMULATION</color>");
             var realvirtualBehaviors =
-                UnityEngine.Object.FindObjectsByType<realvirtualBehavior>(FindObjectsSortMode.None);
+                UnityEngine.Object.FindObjectsByType<realvirtualBehavior>();
             foreach (var behavior in realvirtualBehaviors)
             {
                 behavior.PreStartSim();
@@ -1430,7 +1430,7 @@ namespace realvirtual
 
         public static void BroadcastAll(string fun)
         {
-            GameObject[] gos = (GameObject[])GameObject.FindObjectsByType(typeof(GameObject), FindObjectsSortMode.None);
+            GameObject[] gos = (GameObject[])GameObject.FindObjectsByType(typeof(GameObject));
             foreach (GameObject go in gos)
             {
                 if (go && go.transform.parent == null)
@@ -1526,7 +1526,7 @@ namespace realvirtual
 
                     // get the realvirtualController in the loaded scene
                     var controllers =
-                        UnityEngine.Object.FindObjectsByType<realvirtualController>(FindObjectsSortMode.None);
+                        UnityEngine.Object.FindObjectsByType<realvirtualController>();
                     // disable the gameobject
                     foreach (var controller in controllers)
                     {
@@ -1803,14 +1803,14 @@ namespace realvirtual
         public void UpdateSignals()
         {
             /// Clear Info on all Signals
-            var signals = FindObjectsByType<Signal>(FindObjectsSortMode.None);
+            var signals = FindObjectsByType<Signal>();
             foreach (var signal in signals)
             {
                 signal.DeleteSignalConnectionInfos();
             }
 
             /// get all Behavior models
-            var behaviors = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None).OfType<ISignalInterface>();
+            var behaviors = FindObjectsByType<MonoBehaviour>().OfType<ISignalInterface>();
             foreach (var behavior in behaviors)
             {
                 // now get all signals in behaviors

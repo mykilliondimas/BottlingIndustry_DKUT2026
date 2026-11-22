@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -24,7 +24,7 @@ namespace realvirtual
 			_screen = 60;
 			_rect = GetComponent<RectTransform>();
 			_version = Global.Version;
-			var meshes = FindObjectsByType<MeshFilter>(FindObjectsSortMode.None);
+			var meshes = FindObjectsByType<MeshFilter>();
 
 			foreach (var mesh in meshes)
 				if (mesh.sharedMesh != null)
