@@ -14792,6 +14792,7 @@ MonoBehaviour:
   screenRenderer: {fileID: 875639483746957172}
   textureWidth: 1920
   textureHeight: 1080
+  imageRotation: 0
 --- !u!1 &1255638673
 GameObject:
   m_ObjectHideFlags: 0
