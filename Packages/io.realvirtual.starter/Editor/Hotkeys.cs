@@ -132,10 +132,10 @@ namespace realvirtual
 
         static CustomHierarchyView()
         {
-            EditorApplication.hierarchyWindowItemOnGUI += HierarchyWindowItemOnGUI;
+            EditorApplication.hierarchyWindowItemByEntityIdOnGUI += HierarchyWindowItemOnGUI;
         }
 
-        static void HierarchyWindowItemOnGUI(int instanceID, Rect selectionRect)
+        static void HierarchyWindowItemOnGUI(EntityId entityId, Rect selectionRect)
         {
             // Block hotkeys when any text field has input focus
             if (EditorGUIUtility.editingTextField)
@@ -145,7 +145,7 @@ namespace realvirtual
 
             if (keydown == false)
             {
-                if (Event.current.GetTypeForControl(instanceID) == EventType.KeyDown)
+                if (Event.current.GetTypeForControl(controlID) == EventType.KeyDown)
                 {
                     Hotkeys.KeyDownEvent(Event.current.keyCode);
                     keydown = true;
@@ -154,7 +154,7 @@ namespace realvirtual
 
             if (keydown == true)
             {
-                if (Event.current.GetTypeForControl(instanceID) == EventType.KeyUp)
+                if (Event.current.GetTypeForControl(controlID) == EventType.KeyUp)
                 {
                     keydown = false;
                 }

@@ -21,14 +21,6 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 3085162058089759014
-      type: {class: 'Stack`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic,
-        asm: mscorlib}
-      data: 
-    - rid: 3085162058089759015
-      type: {class: 'HashSet`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic,
-        asm: System.Core}
-      data: 
     - rid: 4295969331626377362
       type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -40,19 +32,8 @@ MonoBehaviour:
           rid: 4295969331626377364
         BlackboardGroupReferences: []
         Root:
-<<<<<<< Updated upstream
-          rid: 7875812153193136223
-        m_VersionTimestamp: 639307986325679260
-=======
-          rid: 7032417231970238772
-        m_ActiveNodes: []
-        m_NodesToTick: []
-        m_NodesToEnd:
-          rid: 3085162058089759014
-        m_EndedNodes:
-          rid: 3085162058089759015
-        m_VersionTimestamp: 639114337042446612
->>>>>>> Stashed changes
+          rid: 7875812330897145959
+        m_VersionTimestamp: 639314751515468721
     - rid: 4295969331626377364
       type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -71,8 +52,7 @@ MonoBehaviour:
         - rid: 4295969331626377375
         - rid: 4295969331626377376
     - rid: 4295969331626377370
-      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 1
@@ -80,8 +60,7 @@ MonoBehaviour:
         Name: Self
         m_Value: {fileID: 0}
     - rid: 4295969331626377371
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 17200292854554606948
@@ -89,8 +68,7 @@ MonoBehaviour:
         Name: ConveyorDrive
         m_Value: {fileID: 0}
     - rid: 4295969331626377372
-      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 16190775289793009510
@@ -98,8 +76,7 @@ MonoBehaviour:
         Name: ConveyorSensor
         m_Value: {fileID: 0}
     - rid: 4295969331626377373
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 11787259523568562822
@@ -107,8 +84,7 @@ MonoBehaviour:
         Name: Axis1
         m_Value: {fileID: 0}
     - rid: 4295969331626377374
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 11371141141850267685
@@ -116,8 +92,7 @@ MonoBehaviour:
         Name: Axis3
         m_Value: {fileID: 0}
     - rid: 4295969331626377375
-      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 13324173454775863306
@@ -125,19 +100,14 @@ MonoBehaviour:
         Name: SignalGrip
         m_Value: {fileID: 0}
     - rid: 4295969331626377376
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 9434105263882083999
           m_Value1: 13598744201078470341
         Name: Axis2
         m_Value: {fileID: 0}
-<<<<<<< Updated upstream
-    - rid: 7875812153193136223
-=======
-    - rid: 7032417231970238772
->>>>>>> Stashed changes
+    - rid: 7875812330897145959
       type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -148,17 +118,10 @@ MonoBehaviour:
         m_Parent:
           rid: -2
         m_Child:
-<<<<<<< Updated upstream
-          rid: 7875812153193136224
+          rid: 7875812330897145960
         Repeat: 1
         AllowMultipleRepeatsPerTick: 0
-    - rid: 7875812153193136224
-=======
-          rid: 7032417231970238773
-        Repeat: 1
-        AllowMultipleRepeatsPerTick: 0
-    - rid: 7032417231970238773
->>>>>>> Stashed changes
+    - rid: 7875812330897145960
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -167,18 +130,11 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-<<<<<<< Updated upstream
-          rid: 7875812153193136223
+          rid: 7875812330897145959
         m_Children:
-        - rid: 7875812153193136225
+        - rid: 7875812330897145961
         m_RegisteredObservers: []
-    - rid: 7875812153193136225
-=======
-          rid: 7032417231970238772
-        m_Children:
-        - rid: 7032417231970238774
-    - rid: 7032417231970238774
->>>>>>> Stashed changes
+    - rid: 7875812330897145961
       type: {class: ParallelAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -187,18 +143,11 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-<<<<<<< Updated upstream
-          rid: 7875812153193136224
+          rid: 7875812330897145960
         m_Children:
-        - rid: 7875812153193136226
+        - rid: 7875812330897145962
         m_RegisteredObservers: []
-    - rid: 7875812153193136226
-=======
-          rid: 7032417231970238773
-        m_Children:
-        - rid: 7032417231970238775
-    - rid: 7032417231970238775
->>>>>>> Stashed changes
+    - rid: 7875812330897145962
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -207,18 +156,11 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-<<<<<<< Updated upstream
-          rid: 7875812153193136225
+          rid: 7875812330897145961
         m_Children:
-        - rid: 7875812153193136227
+        - rid: 7875812330897145963
         m_RegisteredObservers: []
-    - rid: 7875812153193136227
-=======
-          rid: 7032417231970238774
-        m_Children:
-        - rid: 7032417231970238776
-    - rid: 7032417231970238776
->>>>>>> Stashed changes
+    - rid: 7875812330897145963
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -227,18 +169,11 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-<<<<<<< Updated upstream
-          rid: 7875812153193136226
+          rid: 7875812330897145962
         m_Children:
-        - rid: 7875812153193136228
+        - rid: 7875812330897145964
         m_RegisteredObservers: []
-    - rid: 7875812153193136228
-=======
-          rid: 7032417231970238775
-        m_Children:
-        - rid: 7032417231970238777
-    - rid: 7032417231970238777
->>>>>>> Stashed changes
+    - rid: 7875812330897145964
       type: {class: ParallelAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -247,20 +182,12 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-<<<<<<< Updated upstream
-          rid: 7875812153193136227
+          rid: 7875812330897145963
         m_Children:
-        - rid: 7875812153193136229
-        - rid: 7875812153193136230
+        - rid: 7875812330897145965
+        - rid: 7875812330897145966
         m_RegisteredObservers: []
-    - rid: 7875812153193136229
-=======
-          rid: 7032417231970238776
-        m_Children:
-        - rid: 7032417231970238778
-        - rid: 7032417231970238779
-    - rid: 7032417231970238778
->>>>>>> Stashed changes
+    - rid: 7875812330897145965
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -269,18 +196,11 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-<<<<<<< Updated upstream
-          rid: 7875812153193136228
+          rid: 7875812330897145964
         m_Children:
-        - rid: 7875812153193136231
+        - rid: 7875812330897145967
         m_RegisteredObservers: []
-    - rid: 7875812153193136230
-=======
-          rid: 7032417231970238777
-        m_Children:
-        - rid: 7032417231970238780
-    - rid: 7032417231970238779
->>>>>>> Stashed changes
+    - rid: 7875812330897145966
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -289,18 +209,11 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-<<<<<<< Updated upstream
-          rid: 7875812153193136228
+          rid: 7875812330897145964
         m_Children:
-        - rid: 7875812153193136231
+        - rid: 7875812330897145967
         m_RegisteredObservers: []
-    - rid: 7875812153193136231
-=======
-          rid: 7032417231970238777
-        m_Children:
-        - rid: 7032417231970238780
-    - rid: 7032417231970238780
->>>>>>> Stashed changes
+    - rid: 7875812330897145967
       type: {class: WaitForAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -309,19 +222,11 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parents:
-<<<<<<< Updated upstream
-        - rid: 7875812153193136229
-        - rid: 7875812153193136230
+        - rid: 7875812330897145965
+        - rid: 7875812330897145966
         m_Child:
-          rid: 7875812153193136232
-    - rid: 7875812153193136232
-=======
-        - rid: 7032417231970238778
-        - rid: 7032417231970238779
-        m_Child:
-          rid: 7032417231970238781
-    - rid: 7032417231970238781
->>>>>>> Stashed changes
+          rid: 7875812330897145968
+    - rid: 7875812330897145968
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -330,18 +235,11 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parent:
-<<<<<<< Updated upstream
-          rid: 7875812153193136231
+          rid: 7875812330897145967
         m_Children:
-        - rid: 7875812153193136233
+        - rid: 7875812330897145969
         m_RegisteredObservers: []
-    - rid: 7875812153193136233
-=======
-          rid: 7032417231970238780
-        m_Children:
-        - rid: 7032417231970238782
-    - rid: 7032417231970238782
->>>>>>> Stashed changes
+    - rid: 7875812330897145969
       type: {class: WaitForAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
@@ -350,11 +248,7 @@ MonoBehaviour:
         Graph:
           rid: 4295969331626377362
         m_Parents:
-<<<<<<< Updated upstream
-        - rid: 7875812153193136232
-=======
-        - rid: 7032417231970238781
->>>>>>> Stashed changes
+        - rid: 7875812330897145968
         m_Child:
           rid: -2
 --- !u!114 &11400000
@@ -394,13 +288,8 @@ MonoBehaviour:
   - rid: 5225085582788788348
   - rid: 5225085582788788355
   - rid: 5225085582788788362
-<<<<<<< Updated upstream
-  m_VersionTimestamp: 639307986325679260
+  m_VersionTimestamp: 639314751515468721
   m_SerializedVersion: 3
-=======
-  m_VersionTimestamp: 639114337042446612
-  m_SerializedVersion: 1
->>>>>>> Stashed changes
   m_DebugInfo: {fileID: 5792532783686395571}
   m_RuntimeGraph: {fileID: -5417914638257869020}
   AssetID:
@@ -561,14 +450,15 @@ MonoBehaviour:
   m_BlackboardMissingManagedRef: 0
   m_GraphMissingManagedRef: 0
   m_HasMissingTypeInManagedRef: 0
+  m_EnumDependencyCache:
+    Entries: []
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
     - rid: 4295969331626377322
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 17200292854554606948
@@ -578,8 +468,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4295969331626377323
-      type: {class: 'TypedVariableModel`1[[realvirtual.Sensor, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Sensor, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 16190775289793009510
@@ -589,8 +478,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4295969331626377324
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 11371141141850267685
@@ -600,8 +488,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4295969331626377325
-      type: {class: 'TypedVariableModel`1[[realvirtual.Signal, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 13324173454775863306
@@ -611,8 +498,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4295969331626377326
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 11787259523568562822
@@ -622,8 +508,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 4295969331626377327
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 9434105263882083999
@@ -719,8 +604,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085563249623431
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -728,8 +612,7 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085563249623432
-      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -784,8 +667,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: 4295969331626377322
     - rid: 5225085563249623544
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -841,8 +723,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: 4295969331626377323
     - rid: 5225085563249623653
-      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -860,8 +741,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085563249623655
-      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -927,8 +807,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085563249623877
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -936,8 +815,7 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085563249623878
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -993,8 +871,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: 4295969331626377324
     - rid: 5225085564576071814
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1012,8 +889,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085564576071816
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1079,8 +955,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085564576072449
-      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1088,8 +963,7 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085564576072450
-      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1156,8 +1030,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085564576072549
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1165,8 +1038,7 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085564576072550
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1233,8 +1105,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085564576072557
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1242,8 +1113,7 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085564576072558
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1376,8 +1246,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: 4295969331626377325
     - rid: 5225085564576072571
-      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1395,8 +1264,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085564576072573
-      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1606,8 +1474,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085582504625148
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1615,8 +1482,7 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085582504625149
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1717,8 +1583,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085582788788230
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1726,8 +1591,7 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085582788788231
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1793,8 +1657,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085582788788353
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1802,8 +1665,7 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085582788788354
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1869,8 +1731,7 @@ MonoBehaviour:
         LinkedVariable:
           rid: -2
     - rid: 5225085582788788360
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1878,8 +1739,7 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
     - rid: 5225085582788788361
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 0
@@ -1964,8 +1824,7 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 5225085563249623358
-      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 1
@@ -1975,8 +1834,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085563249623474
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 17200292854554606948
@@ -1986,8 +1844,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085563249623510
-      type: {class: 'TypedVariableModel`1[[realvirtual.Sensor, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Sensor, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 16190775289793009510
@@ -1997,8 +1854,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085563249623922
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 11787259523568562822
@@ -2008,8 +1864,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085563249623924
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 11371141141850267685
@@ -2019,8 +1874,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085564576071748
-      type: {class: 'TypedVariableModel`1[[realvirtual.Signal, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 13324173454775863306
@@ -2030,8 +1884,7 @@ MonoBehaviour:
         m_IsShared: 0
         m_Value: {fileID: 0}
     - rid: 5225085564576072562
-      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      type: {class: 'TypedVariableModel`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 9434105263882083999
@@ -2070,8 +1923,7 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 3826358870995632768
-      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 1
@@ -2079,8 +1931,7 @@ MonoBehaviour:
         Name: Self
         m_Value: {fileID: 0}
     - rid: 3826358870995632769
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 17200292854554606948
@@ -2088,8 +1939,7 @@ MonoBehaviour:
         Name: ConveyorDrive
         m_Value: {fileID: 0}
     - rid: 3826358870995632770
-      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Sensor, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 16190775289793009510
@@ -2097,8 +1947,7 @@ MonoBehaviour:
         Name: ConveyorSensor
         m_Value: {fileID: 0}
     - rid: 3826358870995632771
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 11787259523568562822
@@ -2106,8 +1955,7 @@ MonoBehaviour:
         Name: Axis1
         m_Value: {fileID: 0}
     - rid: 3826358870995632772
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 11371141141850267685
@@ -2115,8 +1963,7 @@ MonoBehaviour:
         Name: Axis3
         m_Value: {fileID: 0}
     - rid: 3826358870995632773
-      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Signal, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 13324173454775863306
@@ -2124,8 +1971,7 @@ MonoBehaviour:
         Name: SignalGrip
         m_Value: {fileID: 0}
     - rid: 3826358870995632774
-      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
+      type: {class: 'BlackboardVariable`1[[realvirtual.Drive, realvirtual.base]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 9434105263882083999

@@ -951,7 +951,7 @@ namespace realvirtual
             System.Reflection.MethodInfo methodInfo = type.GetMethod("SetExpandedRecursive");
             EditorApplication.ExecuteMenuItem("Window/General/Hierarchy");
             EditorWindow editorWindow = EditorWindow.focusedWindow;
-            methodInfo.Invoke(editorWindow, new object[] {go.GetInstanceID(), expand});
+            methodInfo.Invoke(editorWindow, new object[] {go.GetEntityId(), expand});
         }
 
 #endif

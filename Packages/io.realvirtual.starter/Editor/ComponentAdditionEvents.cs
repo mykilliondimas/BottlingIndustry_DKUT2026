@@ -16,7 +16,7 @@ namespace realvirtual
     public static class ComponentAdditionEvents
     {
         // Track components to detect additions
-        private static Dictionary<int, HashSet<System.Type>> gameObjectComponents = new Dictionary<int, HashSet<System.Type>>();
+        private static Dictionary<EntityId, HashSet<System.Type>> gameObjectComponents = new Dictionary<EntityId, HashSet<System.Type>>();
         
         // Events for external systems
         public static event Action OnSystemInitialized;
@@ -51,27 +51,25 @@ namespace realvirtual
                 if (eventType == ObjectChangeKind.ChangeGameObjectStructure)
                 {
                     stream.GetChangeGameObjectStructureEvent(i, out var changeEvent);
-                    HandleStructureChange(changeEvent.instanceId);
+                    HandleStructureChange(changeEvent.entityId);
                 }
                 else if (eventType == ObjectChangeKind.CreateGameObjectHierarchy)
                 {
                     stream.GetCreateGameObjectHierarchyEvent(i, out var createEvent);
-                    HandleNewGameObject(createEvent.instanceId);
+                    HandleNewGameObject(createEvent.entityId);
                 }
                 else if (eventType == ObjectChangeKind.DestroyGameObjectHierarchy)
                 {
                     stream.GetDestroyGameObjectHierarchyEvent(i, out var destroyEvent);
-                    HandleDestroyedGameObject(destroyEvent.instanceId);
+                    HandleDestroyedGameObject(destroyEvent.entityId);
                 }
             }
         }
         
         //! Handles structure changes to detect component additions and removals
-        private static void HandleStructureChange(int instanceId)
+        private static void HandleStructureChange(EntityId entityId)
         {
-#pragma warning disable CS0618 // InstanceIDToObject is obsolete - no documented replacement for int instanceId
-            var go = EditorUtility.InstanceIDToObject(instanceId) as GameObject;
-#pragma warning restore CS0618
+            var go = EditorUtility.EntityIdToObject(entityId) as GameObject;
             if (go == null) return;
             
             // Get current components
@@ -85,7 +83,7 @@ namespace realvirtual
             }
             
             // Check if we have previous state
-            if (gameObjectComponents.TryGetValue(instanceId, out var previousComponents))
+            if (gameObjectComponents.TryGetValue(entityId, out var previousComponents))
             {
                 // Find newly added components
                 foreach (var compType in currentComponents.Where(c => !previousComponents.Contains(c)))
@@ -100,15 +98,13 @@ namespace realvirtual
                 }
             }
             
-            gameObjectComponents[instanceId] = currentComponents;
+            gameObjectComponents[entityId] = currentComponents;
         }
-        
+
         //! Handles newly created GameObjects to track their initial components
-        private static void HandleNewGameObject(int instanceId)
+        private static void HandleNewGameObject(EntityId entityId)
         {
-#pragma warning disable CS0618 // InstanceIDToObject is obsolete - no documented replacement for int instanceId
-            var go = EditorUtility.InstanceIDToObject(instanceId) as GameObject;
-#pragma warning restore CS0618
+            var go = EditorUtility.EntityIdToObject(entityId) as GameObject;
             if (go == null) return;
             
             var components = go.GetComponents<Component>();
@@ -123,13 +119,13 @@ namespace realvirtual
                 }
             }
             
-            gameObjectComponents[instanceId] = componentTypes;
+            gameObjectComponents[entityId] = componentTypes;
         }
-        
+
         //! Cleans up tracking when a GameObject is destroyed
-        private static void HandleDestroyedGameObject(int instanceId)
+        private static void HandleDestroyedGameObject(EntityId entityId)
         {
-            gameObjectComponents.Remove(instanceId);
+            gameObjectComponents.Remove(entityId);
         }
         
         //! Processes component addition events
@@ -158,7 +154,7 @@ namespace realvirtual
             
             foreach (var go in allGameObjects)
             {
-                var instanceId = go.GetInstanceID();
+                var entityId = go.GetEntityId();
                 var components = go.GetComponents<Component>();
                 var componentTypes = new HashSet<System.Type>();
                 
@@ -168,7 +164,7 @@ namespace realvirtual
                         componentTypes.Add(comp.GetType());
                 }
                 
-                gameObjectComponents[instanceId] = componentTypes;
+                gameObjectComponents[entityId] = componentTypes;
             }
         }
         

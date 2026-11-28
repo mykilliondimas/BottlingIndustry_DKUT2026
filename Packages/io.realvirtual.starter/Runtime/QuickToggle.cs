@@ -38,12 +38,12 @@ namespace realvirtual
         /// <summary>
         /// Delegate type for professional package to draw additional hierarchy icons.
         /// </summary>
-        /// <param name="instanceId">The instance ID of the hierarchy item</param>
+        /// <param name="entityId">The entity ID of the hierarchy item</param>
         /// <param name="selectionRect">The selection rect for drawing</param>
         /// <param name="target">The target GameObject</param>
         /// <param name="behaviors">Array of realvirtualBehavior components on the target</param>
         /// <param name="curpos">Current position offset (ref to allow modification)</param>
-        public delegate void DrawProfessionalIconsDelegate(int instanceId, Rect selectionRect, GameObject target, realvirtualBehavior[] behaviors, ref float curpos);
+        public delegate void DrawProfessionalIconsDelegate(EntityId entityId, Rect selectionRect, GameObject target, realvirtualBehavior[] behaviors, ref float curpos);
 
         /// <summary>
         /// Hook for professional package to draw additional hierarchy icons (e.g., CAD status).
@@ -350,12 +350,12 @@ namespace realvirtual
                 EditorApplication.update -= HandleEditorUpdate;
                 ResetVars();
                 EditorApplication.update += HandleEditorUpdate;
-                EditorApplication.hierarchyWindowItemOnGUI += DrawHierarchyItem;
+                EditorApplication.hierarchyWindowItemByEntityIdOnGUI += DrawHierarchyItem;
             }
             else
             {
                 EditorApplication.update -= HandleEditorUpdate;
-                EditorApplication.hierarchyWindowItemOnGUI -= DrawHierarchyItem;
+                EditorApplication.hierarchyWindowItemByEntityIdOnGUI -= DrawHierarchyItem;
             }
 
             EditorApplication.RepaintHierarchyWindow();
@@ -448,14 +448,10 @@ namespace realvirtual
             return null;
         }
        
-        private static void DrawHierarchyItem(int instanceId, Rect selectionRect)
+        private static void DrawHierarchyItem(EntityId instanceId, Rect selectionRect)
         {
             Color fontColor = Color.blue;
             Color backgroundColor = new Color(.76f, .76f, .76f);
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
             Signal _signal = null;
             BaseDrive _drive = null;;
             Behaviour _behaviour = null;;
@@ -484,14 +480,7 @@ namespace realvirtual
             if (icondrive == null)
                 return;
 
-<<<<<<< Updated upstream
-            GameObject target = EditorUtility.EntityIdToObject(instanceID) as GameObject;
-=======
-#pragma warning disable CS0618 // InstanceIDToObject is obsolete - no documented replacement for int instanceId
-            GameObject target = EditorUtility.InstanceIDToObject(instanceId) as GameObject;
-#pragma warning restore CS0618
-
->>>>>>> Stashed changes
+            GameObject target = EditorUtility.EntityIdToObject(instanceId) as GameObject;
 
             if (target == null)
                 return;
